@@ -61,13 +61,13 @@ img{
 }
 @media screen and (min-width:1000px) {
     .container{
-        margin-top:7em;
+        margin-top:9em;
     }
     .subtitle{
         font-size:1.1rem;
     }
     .card{
-        max-width:17rem;
+        max-width:20rem;
     }
     .para{
         font-size:0.876rem;

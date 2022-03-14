@@ -25,8 +25,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qrcodecomponent-VbitN5Wpt)
+- Live Site URL: [Add live site URL here](https://qr-component-main.netlify.app/)
 
 ## My process
 Started from mobile first css, analyzed the design and broke it into html components and designed them seperately. 
@@ -36,7 +36,6 @@ Started from mobile first css, analyzed the design and broke it into html compon
 - Semantic HTML5 markup
 - CSS custom properties
 - Flex box
-- CSS Grid
 - Mobile-first workflow
 
 
@@ -50,7 +49,7 @@ I got a refresher of flex box and mobile first css , i didn't do a lot of html a
 
 ## Author
 
-- Website - [Yehan Nilanga](https://www.your-site.com)
+- Website - [Yehan Nilanga](https://yehan-nilanga.netlify.app/)
 - Frontend Mentor - [@Yehan20](https://www.frontendmentor.io/profile/Yehan20)
-- Twitter - [@YehanNilanga](https://www.frontendmentor.io/profile/Yehan20)
+- Twitter - [@YehanNilanga](https://twitter.com/YehanNilanga)
 
