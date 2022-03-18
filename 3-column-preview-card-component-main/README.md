@@ -28,13 +28,13 @@ Users should be able to:
 ### Screenshot
 
 ![](screenshots/3col-lg-ss.png)
-![](screenshots/3col-lg-ss.png)
+![](screenshots/3col-sm-screen.png)
 
 
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/3coulumncardcomponent-R5UzU79aD)
 - Live Site URL: [live site URL here](https://3-col-card-component-main.netlify.app/)
 
 
