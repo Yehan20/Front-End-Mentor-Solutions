@@ -51,6 +51,7 @@ img{
 .subtitle{
     color:hsl(218, 44%, 22%); 
     margin-bottom:0;
+    font-size:1.1rem;
 }
 .para{
     color:hsl(220, 15%, 55%);
@@ -64,13 +65,18 @@ img{
         margin-top:9em;
     }
     .subtitle{
-        font-size:1.1rem;
+        font-size:1.3rem;
     }
     .card{
         max-width:20rem;
+        padding-top:1.5em;
+        
+        
     }
+
     .para{
         font-size:0.876rem;
-        padding:0 1.5em;
+        padding:0 1.5em 1em 1.5em;
+    
     }
 }

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* - Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%) */
+:root{
+    --PaleBlueClr:hsl(225, 100%, 98%);
+    --DesaturatedblueClr:hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+}
+
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-image:url('images/pattern-background-desktop.svg');
+    background-size:cover;
+    background-position: top top;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+img{
+    max-width:100%;
+}
+
+.container{
+    max-width:1140px;
+    width:90%;
+    margin:auto;
+   
+}
+
+footer{
+    margin-top:auto;
+    padding:1em;
+   
+}
+footer .attribution{
+    font-size: 1rem;
+}
+.card{
+    margin:1em auto;
+    padding:0em;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    border-radius:0.7em;
+    max-width:24rem;
+    
+}
+.card__img{
+    background-image:url('images/illustration-hero.svg') ;
+    flex-basis:11rem;
+    background-size:cover;
+    background-position:75% 75%;
+    margin:0;
+    
+}
+.card__body{
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0.5em 3em;
+}
+.card__title{
+    color:var(--Darkblue);
+    margin:1.1em 0 0.5em 0;
+}
+.card__para{
+    text-align:center;
+    margin-top:0.4em;
+    line-height:1.5;
+    color:var(--DesaturatedblueClr);
+}
+.plan{
+    display:flex;
+    align-items:flex-start;
+    gap:1em;
+    margin:1em 0;
+}
+.plan h5 ,.plan h6{
+    margin:0;
+}
+.plan h5{
+    color:var(--Darkblue);
+    margin-bottom:0.2em;
+}
+.plan h6{
+    color:var(--DesaturatedblueClr);
+    font-weight:500;
+    font-size:0.8rem;
+}
+.icon__img{
+    width:35px;
+}
+.plan__link{
+    padding:0.5em 0 0 2em;
+    display:inline-block;
+    font-size:0.8rem;
+    color:var(--Brightblue);
+    font-weight:700;
+}
+.btn{
+    display: inline-block;
+    margin-bottom:1em;
+    text-decoration:none;
+    align-self:stretch;
+    text-align:center;
+    color:var(--DesaturatedblueClr);
+    font-weight:700;
+}
+.btn__main{
+   margin-top:1.5em;
+   padding:0.75em 0.5em;
+   background:var(--Brightblue);
+   color:var(--Paleblue);
+   text-decoration:none;
+   border-radius:0.4em;
+   
+}
+.btn__cancel{
+    padding-bottom: 1em;
+}
