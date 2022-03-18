@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --others:hsl(0, 0%, 95%);
+}
+*,*::before,*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    font-size:0.935rem;
+    background-color:var(--others);
+}
+a{
+    text-decoration:none;
+}
+.container{
+    max-width:1140px;
+    width:90%;
+    margin:0em auto;
+}
+.cards{
+    max-width:23rem;
+  
+    margin-top:4em;
+    display:flex;
+    flex-direction:column;
+    border-radius:0.5em;
+    overflow: hidden;
+   
+}
+.cards>*{
+    padding:3em 2em 2em 3em;
+   
+}
+
+.card>*{
+   margin-bottom:1em;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    
+}
+.card__title{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform:uppercase;
+    font-size:2.2rem;
+    color:var(--others);
+}
+.card__para{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height:1.8;
+    font-size:1.05rem;
+    color:var(--paragraphs);
+    padding-right:1.5em;
+    margin-bottom:1.5em;
+   
+}
+.one{
+    background-color:var(--Brightorange);
+}
+.two{
+    background-color:var(--Darkcyan);
+}
+.three{
+    background-color:var(--Verydarkcyan);
+}
+.btn{
+    display:inline-block;
+    background:var(--others);
+    padding:1em 2em;
+    border-radius:1.6em;
+    font-family:'Lexend Deca', sans-serif;
+    margin-top:auto;
+    align-self:start;
+}
+.first{
+    color:var(--Brightorange);
+}
+.second{
+    color:var(--Darkcyan);
+}
+.third{
+    color:var(--Verydarkcyan);
+}
+
+@media screen and (min-width:900px) {
+      .cards{
+          max-width:100%;
+          flex-direction:row;
+      }
+      .card__para{
+          margin-bottom:4em;
+      }
+}
