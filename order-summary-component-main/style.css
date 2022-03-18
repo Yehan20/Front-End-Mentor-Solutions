@@ -133,4 +133,8 @@ main{
 .btn__cancel{
     padding-bottom: 1em;
 }
-
+ @media screen and (min-width:1000px) {
+     .card{
+         max-width: 26rem;
+     }
+ }

@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshot/screenshot.png)
-![](screenshot/mobileview.png)
+![](screenshot/lg-screen-ss.png)
+![](screenshot/sm-screen-ss.png)
 
 
 ### Links
