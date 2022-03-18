@@ -82,6 +82,12 @@ footer .attribution{
     line-height:1.5;
     color:var(--DesaturatedblueClr);
 }
+.card a{
+    transition:opacity 250ms ease-in ;
+}
+.card a:hover{
+    opacity:0.8;
+}
 .plan{
     display:flex;
     align-items:flex-start;
