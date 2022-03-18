@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/ordersummarycomponentmain-fyAbIOhd8)
+- Live Site URL: [live site URL here](https://order-summary-component-main-yehan.netlify.app/)
 
 ## My process
 
@@ -55,6 +55,6 @@ Learnt to View design and study the structure of the design and create the html 
 ## Author
 
 - Website - [Yehan Nilanga](https://yehan-nilanga.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Yehan20)
 - Twitter - [@YehanNilanga](https://twitter.com/YehanNilanga)
 

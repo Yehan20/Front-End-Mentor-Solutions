@@ -47,8 +47,12 @@ footer{
 footer .attribution{
     font-size: 1rem;
 }
+footer p{
+    margin:0.4em 0;
+    padding:0;
+}
 .card{
-    margin:1em auto;
+    margin:2em auto;
     padding:0em;
     display:flex;
     flex-direction:column;
@@ -70,7 +74,7 @@ footer .attribution{
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding:0.5em 3em;
+    padding:0.5em 3em 0.5em 3em;
 }
 .card__title{
     color:var(--Darkblue);
@@ -94,14 +98,14 @@ footer .attribution{
     gap:1em;
     margin:1em 0;
 }
-.plan h5 ,.plan h6{
+.plan p{
     margin:0;
 }
-.plan h5{
+.plan p:first-child{
     color:var(--Darkblue);
     margin-bottom:0.2em;
 }
-.plan h6{
+.plan p:last-child{
     color:var(--DesaturatedblueClr);
     font-weight:500;
     font-size:0.8rem;
@@ -137,3 +141,4 @@ footer .attribution{
 .btn__cancel{
     padding-bottom: 1em;
 }
+
