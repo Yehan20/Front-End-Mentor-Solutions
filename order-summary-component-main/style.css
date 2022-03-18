@@ -23,15 +23,18 @@ body{
     flex-direction:column;
     background-image:url('images/pattern-background-desktop.svg');
     background-size:cover;
-    background-position: top top;
     background-repeat: no-repeat;
     font-family: 'Red Hat Display', sans-serif;
+    background-position: 50% 0%;
+    background-color: var(--Paleblue);
 
 }
 img{
     max-width:100%;
 }
-
+main{
+    margin:auto;
+}
 .container{
     max-width:1140px;
     width:90%;
@@ -39,18 +42,6 @@ img{
    
 }
 
-footer{
-    margin-top:auto;
-    padding:1em;
-   
-}
-footer .attribution{
-    font-size: 1rem;
-}
-footer p{
-    margin:0.4em 0;
-    padding:0;
-}
 .card{
     margin:2em auto;
     padding:0em;
@@ -74,7 +65,7 @@ footer p{
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding:0.5em 3em 0.5em 3em;
+    padding:0.5em 2em 0.5em 2em;
 }
 .card__title{
     color:var(--Darkblue);
@@ -104,6 +95,7 @@ footer p{
 .plan p:first-child{
     color:var(--Darkblue);
     margin-bottom:0.2em;
+    font-weight:900;
 }
 .plan p:last-child{
     color:var(--DesaturatedblueClr);
