@@ -48,7 +48,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://yehan-nilanga.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Yehan20)
+- Website - [portfolio](https://yehan-nilanga.netlify.app/)
+- Frontend Mentor - [@Yehan20](https://www.frontendmentor.io/profile/Yehan20)
 
 
