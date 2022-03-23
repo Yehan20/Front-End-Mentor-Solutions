@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer {
+  margin-top: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(85%, 1200px);
+  margin: 0 auto;
+}/*# sourceMappingURL=reset.css.map */

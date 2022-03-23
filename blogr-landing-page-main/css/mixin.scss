@@ -1,0 +1,9 @@
+@mixin showcase__btn{
+    color:$Lightred;
+    font-weight:700;
+    font-size:1.1rem;
+    background: $White_Text;
+    padding:1em 0.75em;
+    border-radius:2em;
+    min-width:150px;
+ }
