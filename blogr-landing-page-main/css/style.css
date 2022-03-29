@@ -28,8 +28,9 @@ img {
 }
 
 .container {
-  width: min(85%, 1200px);
+  width: 90%;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .header {
@@ -74,7 +75,7 @@ img {
 }
 .header .list {
   display: none;
-  position: absolute;
+  position: fixed;
   background: white;
   top: 14%;
   margin-left: auto;
@@ -164,7 +165,7 @@ img {
 }
 .header .sub__list {
   background: #f5f5f6;
-  padding: 1em 1em 1em 0;
+  padding: 1em 1em 1em 1em;
   margin: 1em 0 0 0;
   font-family: "Overpass", sans-serif;
   opacity: 0.8;
@@ -254,6 +255,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .header .showcase .showcase__btn__container .showcase__btn {
   color: #ff3d54;
