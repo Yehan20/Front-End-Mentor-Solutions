@@ -127,6 +127,7 @@
              @include mq(799px){
                 color:$Lightred;
                 background: $White_Text;
+                margin-top:0;
                 &:hover{
                     color:$White_Text;
                     background:$Verylightred_CTA_hover_background;
@@ -258,14 +259,25 @@
             display:flex;
             justify-content:center;
             gap:20px;
-            flex-wrap:wrap;
+            @include mq(799px){
+                &{
+                    padding-top:2em;
+                }
+            }
+            // flex-wrap:wrap;
+            @include mqmax(370px){
+                &{
+                     flex-wrap:wrap;
+                }
+            }
+
 
             .showcase__btn{
                 color:$Lightred;
                 font-weight:700;
                 font-size:1.1rem;
                 background: $White_Text;
-                padding:1em 0.75em;
+                padding:0.75em 0.75em;
                 border-radius:2em;
                 min-width:150px;
                 transition:all 250ms ease-in;

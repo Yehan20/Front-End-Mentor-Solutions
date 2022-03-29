@@ -146,6 +146,7 @@ img {
   .header .list .sign__up {
     color: #ff3d54;
     background: white;
+    margin-top: 0;
   }
   .header .list .sign__up:hover {
     color: white;
@@ -255,14 +256,23 @@ img {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+}
+@media screen and (min-width: 799px) {
+  .header .showcase .showcase__btn__container {
+    padding-top: 2em;
+  }
+}
+@media screen and (max-width: 370px) {
+  .header .showcase .showcase__btn__container {
+    flex-wrap: wrap;
+  }
 }
 .header .showcase .showcase__btn__container .showcase__btn {
   color: #ff3d54;
   font-weight: 700;
   font-size: 1.1rem;
   background: white;
-  padding: 1em 0.75em;
+  padding: 0.75em 0.75em;
   border-radius: 2em;
   min-width: 150px;
   transition: all 250ms ease-in;
