@@ -47,7 +47,7 @@ else addLightArrows();
 window.addEventListener('resize',(e)=>{
    
     if(window.innerWidth<799){
-        console.log('small')
+   
         addDarkArrows();
        
     }
@@ -57,13 +57,13 @@ window.addEventListener('resize',(e)=>{
 })
 
 function addDarkArrows(){
-    const arrow = document.querySelectorAll('#arrow');
+    const arrow = document.querySelectorAll('.arrow');
     arrow.forEach((link)=>{
         link.src='images/icon-arrow-dark.svg'
     })
 }
 function addLightArrows(){
-    const arrow = document.querySelectorAll('#arrow');
+    const arrow = document.querySelectorAll('.arrow');
     arrow.forEach((link)=>{
         link.src='images/icon-arrow-light.svg'
     })

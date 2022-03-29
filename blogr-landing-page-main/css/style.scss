@@ -107,7 +107,7 @@
            }
 
         }
-        #arrow{
+        .arrow{
             position:absolute;
             top:1.2em;
             right:-0.3em;
@@ -464,12 +464,12 @@
 
 
 .third__section{
-      margin:2em 0;  
+      margin:2em 0 4em 0;  
       padding:0.5em;
       @include mq(799px){
-        margin:4em 0 5em 0;  
+        margin:4em 0 6em 0;  
         padding-top:11em;
-        padding-bottom:4em;
+        padding-bottom:11em;
           background-image:url('../images/illustration-laptop-desktop.svg');
           background-repeat: no-repeat;
           background-size:65%;
@@ -501,11 +501,7 @@
             
         }
       }
-    //   img{
-    //       display: block;
-    //       width:100%;
-    //       min-width:300px;
-    //   }
+
       .col:first-child{
           background-image: url('../images/illustration-laptop-mobile.svg');
           flex-basis:20rem;
@@ -533,13 +529,13 @@
 
 
 footer{
-    padding:2em 1em 1em 1em;
+    padding:2em 1em 3.5em 1em;
     background-color:$Verydarkblackblue_footerbg ;
     text-align:center;
-    border-top-right-radius: 20%;
+    border-top-right-radius: 6em;
     color:$White_Text;
     @include mq(799px){
-        border-radius:0;
+     
         .grid{
             display:grid;
             gap:5em;
