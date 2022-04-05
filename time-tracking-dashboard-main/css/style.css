@@ -34,6 +34,9 @@ body{
 img{
     max-width:100%;
 }
+a{
+    text-decoration: none;
+}
 .container{
     max-width:1140px;
     width:90%;
@@ -43,8 +46,8 @@ img{
 }
 .item{
     background-color: var(--Darkblue);
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+  border-radius: 1em;
+
 }
 .item__header{
   background: var(--BlueClr);
@@ -82,4 +85,40 @@ img{
 }
 .activity{
    margin-top:1em;  
+}
+.item__body a{
+    color: var(--PaleBlue);
+}
+.item__body .active{
+    color:#fff;
+}
+
+.activity{
+    display: flex;
+    flex-direction: column;
+    
+}
+.item__wallpaper{
+    background-image: url('../images/icon-work.svg');
+    flex-basis:3rem;
+    background-repeat: no-repeat;
+    background-position:right top;
+    background-color: var(--LightRedClr);
+    border-top-left-radius:1em;
+    border-top-right-radius:1em;
+}
+.activity .item__body {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color:var(--Darkblue);
+    position: relative;
+    top: -5px;
+    z-index: 2;
+}
+.item__body .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
