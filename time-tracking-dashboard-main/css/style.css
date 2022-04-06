@@ -85,6 +85,7 @@ a{
 }
 .activity{
    margin-top:1em;  
+   background: none;
 }
 .item__body a{
     color: var(--PaleBlue);
@@ -99,26 +100,111 @@ a{
     
 }
 .item__wallpaper{
-    background-image: url('../images/icon-work.svg');
-    flex-basis:3rem;
+ 
+    flex-basis:4rem;
     background-repeat: no-repeat;
     background-position:right top;
-    background-color: var(--LightRedClr);
+  
     border-top-left-radius:1em;
     border-top-right-radius:1em;
 }
+
+.work{
+    background-image: url('../images/icon-work.svg');
+    background-color: var(--LightRedClr);
+}
+.study{
+    background-image: url('../images/icon-study.svg');
+    background-color: var(--LightRed);
+    
+}
+.play{
+    background-image: url('../images/icon-play.svg');
+    background-color: var(--SoftblueClr);
+}
+.exercise{
+    background-image: url('../images/icon-exercise.svg');
+    background-color: var(--Limegreen);
+}
+
+.social{
+    background-image: url('../images/icon-social.svg');
+    background-color: var(--Violet);
+}
+
+.selfcare{
+    background-image: url('../images/icon-self-care.svg');
+    background-color: var(--Softorange);
+}
+
 .activity .item__body {
     display: flex;
     flex-direction: column;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    border-top-left-radius: 0.75em;
+    border-top-right-radius: 0.75em;
     background-color:var(--Darkblue);
     position: relative;
-    top: -5px;
+    top: -10px;
     z-index: 2;
 }
 .item__body .row{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1em 1em 1em;
+}
+
+.item__body h3{
+   font-size:1.125rem;
+   font-weight:500;
+   margin-bottom:0;
+   margin-top:0;
+}
+.item__body .time h3{
+     font-weight:300;
+     font-size:2rem;
+     margin-top: 0.4em;
+}
+.item__body .time p {
+    margin-top:1em;
+    margin-bottom:0;
+}
+
+/* Media queries */
+@media screen and (min-width:799px) {
+    .container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap:1em;
+    }
+    .activity{
+      margin-top:0;
+    }
+
+    .user__profile{
+       grid-row:1/3;
+    }
+
+    .item__header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .item__body{
+       flex-direction:column;
+       margin-bottom:0;
+    }
+
+    .time{
+       flex-direction: column;
+       align-items: flex-start !important;
+       text-align: start !important;
+    }
+    .item__body .time h3{
+        font-size:4rem;
+    }
+  
+   
+
+
 }
