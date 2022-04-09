@@ -61,6 +61,7 @@ a{
   justify-content:space-evenly;
   color: #fff;
 
+
 }
 
 .user__profile{
@@ -182,6 +183,7 @@ a{
 .item__body .time p {
     margin-top:1em;
     margin-bottom:0;
+    color: var(--PaleBlue);
 }
 .item__body a{
     transition:all 250ms ease-in;
@@ -204,6 +206,13 @@ a{
     .item__header span{
         font-size:1.5rem;
     }
+    .item__body .row {
+
+        padding: 0 0.5em 1em 0.5em;
+      }
+      .item__header {
+          gap:10px;
+      }
 }
 
 @media (min-width: 768px) and (max-width: 991px) { 
