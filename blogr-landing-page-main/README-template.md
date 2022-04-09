@@ -27,8 +27,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[solution](https://www.frontendmentor.io/solutions/blogr-landing-page-using-flex-box-grid-and-mobile-first-work-flow-rJX2B1xQc)
+
+[live site](https://blogr-landing-page-solution-yehan.netlify.app/)
 
 ## My process
 
