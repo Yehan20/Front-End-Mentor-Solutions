@@ -28,13 +28,13 @@ Users should be able to:
 ### Screenshot
 
 ![](UI/largescreen.png)
-![](UI/smallscreen.png.png)
+![](UI/smallscreen.png)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://yn-time-tracking-dashboard.netlify.app/)
 
 ## My process
 
