@@ -34,7 +34,7 @@ img {
 }
 
 .header {
-  background-color: #ff3d54;
+  background-color: hsl(353deg, 100%, 62%);
   position: relative;
   z-index: 2;
   padding: 1em;
@@ -76,7 +76,7 @@ img {
 .header .list {
   display: none;
   position: fixed;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
   top: 14%;
   margin-left: auto;
   margin-right: auto;
@@ -115,24 +115,24 @@ img {
 .header .list .list__link {
   font-family: "Overpass", sans-serif;
   font-weight: 600;
-  color: #1f3f5b;
+  color: hsl(208deg, 49%, 24%);
   font-size: 1.1rem;
   padding: 0.8em 0.2em;
   position: relative;
 }
 @media screen and (min-width: 799px) {
   .header .list .list__link {
-    color: white;
+    color: hsl(0deg, 0%, 100%);
   }
 }
 .header .list .arrow {
   position: absolute;
   top: 1.2em;
-  right: -0.3em;
+  right: -0.5em;
 }
 .header .list .sign__up {
-  background-image: linear-gradient(to right, #ff8f70, #ff3d54);
-  color: white;
+  background-image: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.8em 2.2em;
@@ -144,13 +144,13 @@ img {
 }
 @media screen and (min-width: 799px) {
   .header .list .sign__up {
-    color: #ff3d54;
-    background: white;
+    color: hsl(353deg, 100%, 62%);
+    background: hsl(0deg, 0%, 100%);
     margin-top: 0;
   }
   .header .list .sign__up:hover {
-    color: white;
-    background: #ff7a85;
+    color: hsl(0deg, 0%, 100%);
+    background: hsl(355deg, 100%, 74%);
   }
 }
 .header .list .bar {
@@ -195,7 +195,7 @@ img {
   margin-bottom: 1.2em;
 }
 .header .sub__link a {
-  color: #3f4164;
+  color: hsl(237deg, 23%, 32%);
   font-weight: 600;
 }
 .header .sub__link:hover .sub__list {
@@ -218,8 +218,8 @@ img {
     transform: rotate(180deg);
   }
   .header .sub__link:hover {
-    -webkit-text-decoration: underline solid white 3px;
-            text-decoration: underline solid white 3px;
+    -webkit-text-decoration: underline solid hsl(0deg, 0%, 100%) 3px;
+            text-decoration: underline solid hsl(0deg, 0%, 100%) 3px;
   }
   .header .sub__link a:hover {
     font-weight: 700;
@@ -240,7 +240,7 @@ img {
   padding: 3em 0;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 .header .showcase .showcase__title {
   font-size: 2.3rem;
@@ -268,27 +268,27 @@ img {
   }
 }
 .header .showcase .showcase__btn__container .showcase__btn {
-  color: #ff3d54;
+  color: hsl(353deg, 100%, 62%);
   font-weight: 700;
   font-size: 1.1rem;
-  background: white;
+  background: hsl(0deg, 0%, 100%);
   padding: 0.75em 0.75em;
   border-radius: 2em;
   min-width: 150px;
   transition: all 250ms ease-in;
 }
 .header .showcase .showcase__btn__container .showcase__btn:hover {
-  color: white;
-  background: #ff7a85;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(355deg, 100%, 74%);
 }
 .header .showcase .showcase__btn__container .light {
   background: transparent;
-  color: white;
-  outline: 2px solid white;
+  color: hsl(0deg, 0%, 100%);
+  outline: 2px solid hsl(0deg, 0%, 100%);
 }
 .header .showcase .showcase__btn__container .light:hover {
-  color: #ff3d54;
-  background: white;
+  color: hsl(353deg, 100%, 62%);
+  background: hsl(0deg, 0%, 100%);
 }
 
 .first__section {
@@ -311,7 +311,7 @@ img {
 .first__section .title {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  color: #1f3f5b;
+  color: hsl(208deg, 49%, 24%);
   margin-bottom: 1.3em;
   font-weight: 500;
 }
@@ -357,7 +357,7 @@ img {
 }
 .first__section .para__title {
   text-align: center;
-  color: #1f3f5b;
+  color: hsl(208deg, 49%, 24%);
   font-family: "Overpass", sans-serif;
   word-wrap: break-word;
   font-size: 1.3rem;
@@ -366,12 +366,12 @@ img {
   text-align: center;
   font-family: "Overpass", sans-serif;
   line-height: 1.7;
-  color: #3f4164;
+  color: hsl(237deg, 23%, 32%);
   font-weight: 300;
 }
 
 .second__section {
-  background-color: #2c2d3f;
+  background-color: hsl(237deg, 17%, 21%);
   margin: 5em 0;
   border-top-right-radius: 6em;
   border-bottom-left-radius: 5em;
@@ -425,7 +425,7 @@ img {
 }
 .second__section .para__title {
   text-align: center;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-family: "Overpass", sans-serif;
   word-wrap: break-word;
   font-size: 2rem;
@@ -434,7 +434,7 @@ img {
   text-align: center;
   font-family: "Overpass", sans-serif;
   line-height: 1.7;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-weight: 300;
   font-size: 1.1rem;
 }
@@ -490,7 +490,7 @@ img {
   text-align: center;
   font-family: "Overpass", sans-serif;
   line-height: 1.7;
-  color: #3f4164;
+  color: hsl(237deg, 23%, 32%);
   font-weight: 700;
   font-size: 1.6rem;
 }
@@ -498,16 +498,16 @@ img {
   text-align: center;
   font-family: "Overpass", sans-serif;
   line-height: 1.7;
-  color: #3f4164;
+  color: hsl(237deg, 23%, 32%);
   font-weight: 300;
 }
 
 footer {
   padding: 2em 1em 3.5em 1em;
-  background-color: #25252d;
+  background-color: hsl(240deg, 10%, 16%);
   text-align: center;
   border-top-right-radius: 6em;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
 }
 @media screen and (min-width: 799px) {
   footer .grid {
@@ -540,7 +540,7 @@ footer h4 {
 footer li {
   margin-bottom: 0.3em;
   font-size: 1.1rem;
-  color: #c8c8cb;
+  color: hsl(240deg, 2%, 79%);
   font-family: "Overpass", sans-serif;
   font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
