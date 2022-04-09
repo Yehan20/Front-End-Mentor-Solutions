@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://yn-time-tracking-dashboard.netlify.app/)
+ [Solution ](https://www.frontendmentor.io/solutions/timetrackingdashboardcssgrid-rkd43C07q)
+ [Live Site](https://yn-time-tracking-dashboard.netlify.app/)
 
 ## My process
 
