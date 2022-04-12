@@ -1,0 +1,13 @@
+:root{
+  --Softblue:hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Darkbluemain: hsl(217, 54%, 11%);
+  --Darkbluecard: hsl(216, 50%, 16%);
+  --darkblue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --ff-main:'Outfit', sans-serif;
+}
+
+*,*::after,*::before{
+    box-sizing:border-box;
+}
