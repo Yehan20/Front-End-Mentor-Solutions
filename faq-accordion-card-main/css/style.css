@@ -6,7 +6,6 @@
 --Verydarkgrayishblue: hsl(237, 12%, 33%);
 --Darkgrayishblue: hsl(240, 6%, 50%);
 --Lightgrayishblue: hsl(240, 5%, 91%);
-
 --ff: 'Kumbh Sans', sans-serif;
 }
 
@@ -58,7 +57,6 @@ main{
 
 .accordin__img>:last-child{
     max-width:200px;
-    /* position: absolute; */
     display:block;
     object-fit: cover;
     position: relative;
@@ -70,7 +68,7 @@ main{
     width:100%;
 }
 .accordin__img>:first-child{
-    /* margin:0 auto; */
+
     max-width:200px;
     position: absolute;
     display:block;
@@ -78,7 +76,8 @@ main{
     width:100%;
     left:50%;
     right:50%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
+    margin:0 1em;
 
 }
 .accordin__body{
@@ -86,7 +85,7 @@ main{
     padding: 0em 1em 3em 1em;
 }
 .title{
-    /* margin-top:0; */
+
     text-align:center;
     margin-bottom:1em;
     font-size:1.7rem;
@@ -117,7 +116,7 @@ details img{
     cursor: pointer;
     position: relative;
     top:0;
-    /* right:-10%; */
+
     
 }
 
@@ -141,66 +140,75 @@ details p{
   line-height:1.7;
   color: var(--Darkgrayishblue);
 }
-@media screen and (min-width:992px) {
-    main{
-        /* margin:0; */
-    }
-      .accordin{
-         flex-direction: row;
-         max-width:49rem;
-         width:100%;
-         justify-content: center;
-         padding:0 2em 0em 2em;
-         /* overflow: hidden; */
-         /* overflow: hidden; */
-         position: relative;
-      }
-      .accordin>*{
-          width:100%;
-      }
-  
-      .title{
-          text-align: left;
-      }
-      .accordin__body{
-        padding-top:2em;
-        padding-right:4em;
-      }
-      .mobile{
-          display: none;
-      }
-      .desktop{
-          display: block;
-          position: relative;
-          overflow: hidden;
-          z-index:99;
-          /* background-color: red; */
-          top:0em;
-          left:-2em;
-          padding-top:2em;
-          padding-bottom:2em;
-      }
-      .desktop>img{
-          position: absolute;
-      }
-      .desktop>img:first-child{
-          max-width:600px;
-          top:0;
-          left:0;
-          /* z-index:99; */
-          transform: translate(-10%,20%) scale(1.1);
-          
-      }
-      .desktop>img:nth-child(2){
-        max-width:700px;
-        z-index:-1;
-        top:0;
-        left:0;
-        /* z-index:99; */
-        transform: translate(-50%,-15%) scale(2);
-        /* background-color: rebeccapurple; */
-    }
 
+
+@media (min-width: 768px) {
+    .accordin{
+        flex-direction: row;
+        max-width:49rem;
+        width:90%;
+        justify-content: center;
+        padding:0 2em 0em 2em;
+        position: relative;
+     }
+     .accordin>*{
+         width:100%;
+     }
+ 
+     .title{
+         text-align: left;
+     }
+     .accordin__body{
+       padding-top:2em;
+       padding-right:4em;
+     }
+     .mobile{
+         display: none;
+     }
+     .desktop{
+         display: block;
+         position: relative;
+         overflow: hidden;
+         z-index:99;
+         top:0em;
+         left:-2em;
+         padding-top:2em;
+         padding-bottom:2em;
+     }
+     .desktop>img{
+         position: absolute;
+     }
+     .desktop>img:first-child{
+         max-width:600px;
+         top:0;
+         left:0;
+       
+         transform: translate(-10%,20%) scale(1.1);
+         
+     }
+     .desktop>img:nth-child(2){
+       max-width:700px;
+       z-index:-1;
+       top:0;
+       left:0;
+       transform: translate(-50%,-15%) scale(2);
+  
+   }
+
+   #block{
+       display: block;
+       position: absolute;
+       top:4.5em;
+       left:-1%;
+       z-index:99;
+       width:160px;
+       transform: translate(-40%,50%);
+   }
+   
+
+}
+@media (min-width:992px) {
+ 
     #block{
         display: block;
         position: absolute;
@@ -210,5 +218,4 @@ details p{
         width:160px;
         transform: translate(-40%,50%);
     }
-    
 }
