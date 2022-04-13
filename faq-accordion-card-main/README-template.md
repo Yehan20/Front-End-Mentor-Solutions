@@ -32,9 +32,9 @@ Users should be able to:
 
 
 ### Links
+ [Solution ]("")
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+ [Live Site](https://yn-faq-accordion-card.netlify.app/)
 
 ## My process
 
@@ -52,6 +52,7 @@ Learnt how to use HTML semantic details and summary , for this
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Yehan Nilanga](https://yehan-nilanga.netlify.app/)
+- Frontend Mentor - [@Yehan20](https://www.frontendmentor.io/profile/Yehan20)
+
 
