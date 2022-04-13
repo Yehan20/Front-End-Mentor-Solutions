@@ -1,0 +1,214 @@
+:root{   
+--Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+--Softred: hsl(14, 88%, 65%);
+--Softviolet: hsl(273, 75%, 66%);
+--Softblue: hsl(240, 73%, 65%);
+--Verydarkgrayishblue: hsl(237, 12%, 33%);
+--Darkgrayishblue: hsl(240, 6%, 50%);
+--Lightgrayishblue: hsl(240, 5%, 91%);
+
+--ff: 'Kumbh Sans', sans-serif;
+}
+
+*,*::after,*::before{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-image: linear-gradient(to bottom,var(--Softviolet),var(--Softblue));
+    justify-content: center;
+    font-size:0.75rem;
+} 
+img{
+    max-width:100%;
+}
+main{
+    margin-top:3em;
+    position: relative;
+}
+.accordin{
+    max-width:18rem;
+    margin:5em auto;
+    background-color:#fff;
+    width:100%;
+    padding: 0 1em;
+    border-radius:1.5em;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff);
+
+}
+.accordin__img{
+    position: relative;
+    top:-5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius:1em;
+    padding:0;
+    margin:0;
+}
+.desktop{
+   display:none;
+}
+#block{
+    display: none;
+}
+
+.accordin__img>:last-child{
+    max-width:200px;
+    /* position: absolute; */
+    display:block;
+    object-fit: cover;
+    position: relative;
+    top:4em;
+    left:50%;
+    right:50%;
+    margin: 0 auto;
+    transform: translateX(-70%);
+    width:100%;
+}
+.accordin__img>:first-child{
+    /* margin:0 auto; */
+    max-width:200px;
+    position: absolute;
+    display:block;
+    top:-3em;
+    width:100%;
+    left:50%;
+    right:50%;
+    transform: translateX(-50%);
+
+}
+.accordin__body{
+    background-color:#fff;
+    padding: 0em 1em 3em 1em;
+}
+.title{
+    /* margin-top:0; */
+    text-align:center;
+    margin-bottom:1em;
+    font-size:1.7rem;
+    color: var(--Verydarkdesaturatedblue);
+}
+.line{
+    height:1px;
+    background-color: var(--Lightgrayishblue);
+    width:100%;
+    margin-bottom:1em;
+}
+
+details > summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Verydarkgrayishblue);
+    transition: all 250ms ease-in;
+  } 
+  details > summary:hover{
+      color: var(--Softred);
+  }
+
+details img{
+    transition: transform 200ms ease-in-out;
+    transform: translateY(-1px);
+    cursor: pointer;
+    position: relative;
+    top:0;
+    /* right:-10%; */
+    
+}
+
+details[open] summary{
+    font-weight:700;
+    color: var(--Verydarkdesaturatedblue);
+}
+details[open]>  summary > img{
+    transform: translateY(-1px) rotate(180deg);
+    
+
+} 
+details{
+    display: flex;
+    cursor: pointer;
+    margin-bottom:1.5em;
+    color: var(--Verydarkdesaturatedblue);
+
+}
+details p{
+  line-height:1.7;
+  color: var(--Darkgrayishblue);
+}
+@media screen and (min-width:992px) {
+    main{
+        /* margin:0; */
+    }
+      .accordin{
+         flex-direction: row;
+         max-width:49rem;
+         width:100%;
+         justify-content: center;
+         padding:0 2em 0em 2em;
+         /* overflow: hidden; */
+         /* overflow: hidden; */
+         position: relative;
+      }
+      .accordin>*{
+          width:100%;
+      }
+  
+      .title{
+          text-align: left;
+      }
+      .accordin__body{
+        padding-top:2em;
+        padding-right:4em;
+      }
+      .mobile{
+          display: none;
+      }
+      .desktop{
+          display: block;
+          position: relative;
+          overflow: hidden;
+          z-index:99;
+          /* background-color: red; */
+          top:0em;
+          left:-2em;
+          padding-top:2em;
+          padding-bottom:2em;
+      }
+      .desktop>img{
+          position: absolute;
+      }
+      .desktop>img:first-child{
+          max-width:600px;
+          top:0;
+          left:0;
+          /* z-index:99; */
+          transform: translate(-10%,20%) scale(1.1);
+          
+      }
+      .desktop>img:nth-child(2){
+        max-width:700px;
+        z-index:-1;
+        top:0;
+        left:0;
+        /* z-index:99; */
+        transform: translate(-50%,-15%) scale(2);
+        /* background-color: rebeccapurple; */
+    }
+
+    #block{
+        display: block;
+        position: absolute;
+        top:5.5em;
+        left:-1%;
+        z-index:99;
+        width:160px;
+        transform: translate(-40%,50%);
+    }
+    
+}
