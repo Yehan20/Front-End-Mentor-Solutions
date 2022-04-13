@@ -11,3 +11,134 @@
 *,*::after,*::before{
     box-sizing:border-box;
 }
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-color:var(--Darkbluemain);
+}
+img{
+  max-width:100%;
+}
+a{
+  text-decoration: none;
+}
+.card{
+  max-width:28rem;
+  width:90%;
+  margin:3em auto;
+  background-color: var(--Darkbluecard);
+  padding:1.75rem 1.75em;
+  border-radius:1em;
+  font-family: var(--ff-main);
+  display:flex;
+  flex-direction:column;
+  gap:0.5em;
+ 
+}
+.card .card__top{
+  display:block;
+  border-radius:0.3em;
+  max-width:23rem;
+  width:100%;
+}
+.card .card__title{
+  color: var(--White);
+  font-size:1.7rem;
+}
+.card .card__link{
+  position: relative;
+  overflow: hidden;
+  border-radius:0.5em;
+}
+.card .card__link::before{
+   content:'';
+   position: absolute;
+   inset:0;
+   background-color:var(--Cyan);
+   opacity:0.5;
+   transform: translate(0,100%);
+   background-repeat: no-repeat;
+   background-position: center;
+   transition:transform 450ms ease-in-out ;
+   border-radius:0.3em;
+   transform-origin: bottom;
+}
+.card .card__link::after{
+  content:'';
+  position: absolute;
+  inset:0;
+  transform: translate(0,100%);
+  background-image: url('../images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition:transform 450ms ease-in-out ;
+  border-radius:0.3em;
+  transform-origin: bottom;
+}
+.card  .card__link:hover::before,.card  a.card__link:hover::after{
+  transform: translate(0,0%);
+   
+}
+.card .card__detail{
+  font-weight:300;
+  line-height:1.7;
+  color:var(--Softblue);
+  font-size:1.1rem;
+}
+.card .details__row {
+
+  display:flex;
+  justify-content: space-between;
+}
+
+.card .details__row  p{
+  font-weight:600;
+  font-size:1.125rem;
+  margin-top:0;
+}
+.card .details__row  p:first-child{
+   color: var(--Cyan);
+}
+.card .details__row  p:last-child{
+  color: var(--Softblue);
+}
+.card .details__row img{
+  position: relative;
+  top:0.1em;
+}
+
+.card .line {
+  width:100%;
+  margin: 0  0 0.5em   0;
+  background-color: var(--Softblue);
+  opacity:0.3;
+  height:1px;
+}
+.author{
+  display:flex;
+  align-items: center;
+  gap:1em;
+}
+.author img{
+  width:40px;
+  border-radius:50%;
+  outline:1px solid var(--White);
+}
+.author p, .author p a {
+   font-size:1.125rem;
+   color: var(--White);
+   transition: all 250ms ease-in;
+}
+.author span{
+  color: var(--Softblue);
+}
+.author a:hover{
+  color: var(--Cyan);
+}
+
+@media  screen and (min-width:992px) {
+     
+}
