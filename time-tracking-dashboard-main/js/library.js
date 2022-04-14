@@ -47,36 +47,36 @@ class Library{
 
 
     addData(data,type){
-     
+       console.log(data)
       switch(type){
           case "Work":
           work.innerHTML=` <h3>${data[0][1]}hrs</h3>
-          <p>Last week ${data[0][1]}-hrs</p> `    
+          <p>Last week ${data[1][1]}-hrs</p> `    
           break;
           
           case "Play":
           play.innerHTML=` <h3>${data[0][1]}hrs</h3>
-          <p>Last week ${data[0][1]}-hrs</p> `    
+          <p>Last week ${data[1][1]}-hrs</p> `    
           break;
           
           case "Study":
           study.innerHTML=` <h3>${data[0][1]}hrs</h3>
-          <p>Last week ${data[0][1]}-hrs</p> `    
+          <p>Last week ${data[1][1]}-hrs</p> `    
           break;
           
           case "Exercise":
           exercise.innerHTML=` <h3>${data[0][1]}hrs</h3>
-          <p>Last week ${data[0][1]}-hrs</p> `    
+          <p>Last week ${data[1][1]}-hrs</p> `    
           break;
           
           case "Social":
           social.innerHTML=` <h3>${data[0][1]}hrs</h3>
-          <p>Last week ${data[0][1]}-hrs</p> `    
+          <p>Last week ${data[1][1]}-hrs</p> `    
           break; 
   
           case "Self Care":
           selfcare.innerHTML=` <h3>${data[0][1]}hrs</h3>
-          <p>Last week ${data[0][1]}-hrs</p> `    
+          <p>Last week ${data[1][1]}-hrs</p> `    
           break; 
   
        }
