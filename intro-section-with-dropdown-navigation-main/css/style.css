@@ -2,4 +2,86 @@
 --AlmostWhite: hsl(0, 0%, 98%);
 --MediumGray: hsl(0, 0%, 41%);
 --AlmostBlack: hsl(0, 0%, 8%);
+--ff:'Epilogue', sans-serif;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: var(--ff);
+    font-size: 1.12rem;
+}
+img{
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding-left:0;
+}
+
+header{
+    /* background-image: url('../images/image-hero-mobile.png');
+    background-size: cover;
+    padding:2em 1em 20em 1em ;
+    background-position: 0 -100%;
+    background-repeat: no-repeat; */
+    padding-top: 1em;
+}
+.nav__bar{
+
+    /* align-items: center; */
+    background-image: url('../images/image-hero-mobile.png');
+    background-size: 100% 100%;
+    padding:2em 1em 20em 1em ;
+    background-position: 0 -100%;
+    background-repeat: no-repeat;
+}
+.toggler__Btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index:99;
+}
+.list{
+    /* display:none; */
+    position: absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height:100%;
+    background-color:var(--AlmostWhite);
+    margin-top:0;
+    padding: 3em 1em;
+}
+.logo__toggler{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    padding:0.5em;
+}
+.sub__list{
+    margin-top:0.5em;
+    padding-left: 1em;
+}
+.sub__list  >li{
+  /* background-color: red; */
+}
+
+.dropdown__arrow {
+    display: inline-block;
+    position: relative;
+    top:-0.2em
+}
+
+.list li{
+    margin-bottom:0.75em;
+}
+.list  a{
+      color: var(--AlmostBlack);
 }
