@@ -30,23 +30,23 @@
 
   <header>
      <div class="logo__toggler">
-        <img src="images/logo.svg" alt="Logo Image">
-        <button class="toggler__Btn">
-          <img src="images/icon-menu.svg"  alt="Toggler Option">
+        <img src="images/logo.svg" class="logo" alt="Logo Image">
+        <button class="toggler__Btn" id="toggleBtn" >
+          <img src="images/icon-menu.svg" class="cross no"  alt="Toggler Option">
         </button>
     </div>
     <nav class="nav__bar">
          <ul class="list">
-           <li><a href="#">Features <img src="images/icon-arrow-down.svg" class="dropdown__arrow" alt="Arrow" ></a>
+           <li><a href="#" id="dropDown">Features <img src="images/icon-arrow-down.svg" class="dropdown__arrow" alt="Arrow" ></a>
              <ul class="sub__list">
-               <li><a href="#"> <img src="images/icon-todo.svg" alt=""> Todo List</a></li>
-               <li><a href="#"> <img src="images/icon-calendar.svg" alt=""> Calender</a></li>
+               <li><a href="#"> <img src="images/icon-todo.svg" alt="Todo"> Todo List</a></li>
+               <li><a href="#"> <img src="images/icon-calendar.svg" alt="Calender"> Calender</a></li>
                <li><a href="#">
                  <img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
-               <li><a href="#"> <img src="images/icon-planning.svg" alt=""> Planing</a></li>
+               <li><a href="#"> <img src="images/icon-planning.svg" alt="Planning"> Planing</a></li>
              </ul>
           </li>
-           <li><a href="#">Company <img src="images/icon-arrow-down.svg" class="dropdown__arrow" alt="Arrow" ></a>
+           <li><a href="#" id="dropDown">Company <img src="images/icon-arrow-down.svg" class="dropdown__arrow" alt="Arrow" ></a>
                <ul class="sub__list">
                   <li><a href="#">History</a></li>
                   <li><a href="#">Our Team</a></li>
@@ -61,6 +61,6 @@
      
     </nav>
   </header>
-  
+  <script src="js/app.js"></script>
 </body>
 </html>

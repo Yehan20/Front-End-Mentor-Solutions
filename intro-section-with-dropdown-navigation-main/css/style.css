@@ -12,6 +12,7 @@ body{
     margin:0;
     font-family: var(--ff);
     font-size: 1.12rem;
+    /* background-color: rgba(0, 0,0,0.4); */
 }
 img{
     max-width:100%;
@@ -25,12 +26,11 @@ ul{
 }
 
 header{
-    /* background-image: url('../images/image-hero-mobile.png');
-    background-size: cover;
-    padding:2em 1em 20em 1em ;
-    background-position: 0 -100%;
-    background-repeat: no-repeat; */
     padding-top: 1em;
+}
+.logo{
+  margin-left:1em;  
+  height: 31px;
 }
 .nav__bar{
 
@@ -40,6 +40,15 @@ header{
     padding:2em 1em 20em 1em ;
     background-position: 0 -100%;
     background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.nav__bar__toggled::before{
+    content: '';
+    position:absolute;
+    inset:0;
+    background:rgba(0, 0, 0, 0.8);
 }
 .toggler__Btn{
     border: none;
@@ -58,20 +67,33 @@ header{
     background-color:var(--AlmostWhite);
     margin-top:0;
     padding: 3em 1em;
+    transition:transform 250ms ease-in;
+    overflow: hidden;
+    transform-origin: right;
+    transform: scale(0,1);
+ 
+}
+
+.move{
+    transform: scale(1,1);
+
 }
 .logo__toggler{
     display:flex;
     justify-content: space-between;
     margin-bottom: 1em;
-    padding:0.5em;
+    padding-right:0.5em;
 }
 .sub__list{
-    margin-top:0.5em;
+    margin-top:1em;
+    margin-bottom: 2em;
     padding-left: 1em;
+    /* transform-origin: top;
+    transform: scale(0,0); */
+    display: none;
+
 }
-.sub__list  >li{
-  /* background-color: red; */
-}
+
 
 .dropdown__arrow {
     display: inline-block;
@@ -80,8 +102,13 @@ header{
 }
 
 .list li{
-    margin-bottom:0.75em;
+    margin-bottom:1em;
 }
 .list  a{
-      color: var(--AlmostBlack);
+      color: var(--MediumGray);
 }
+.sub__list  >li{
+    /* background-color: red; */
+  
+    margin-bottom: 1em;
+  }
