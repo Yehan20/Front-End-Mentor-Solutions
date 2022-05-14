@@ -12,6 +12,7 @@ body{
     margin:0;
     font-family: var(--ff);
     font-size: 1.12rem;
+  
     /* background-color: rgba(0, 0,0,0.4); */
 }
 img{
@@ -27,6 +28,7 @@ ul{
 
 header{
     padding-top: 1em;
+   
 
 }
 .logo{
@@ -38,7 +40,7 @@ header{
     /* align-items: center; */
     background-image: url('../images/image-hero-mobile.png');
     background-size: 100% 100%;
-    padding:2em 1em 20em 1em ;
+    padding:2em 1em 17em 1em ;
     background-position: 0 -100%;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -91,12 +93,13 @@ header{
     margin-top:1em;
     margin-bottom: 2em;
     padding-left: 1em;
-    /* transform-origin: top;
-    transform: scale(0,0); */
     display: none;
 
 }
 
+.inLarge{
+    display: none;
+}
 
 .dropdown__arrow {
     display: inline-block;
@@ -127,6 +130,7 @@ main{
 .title{
     text-align: center;
     margin-bottom:0;
+    font-size:2rem;
 }
 .col{
     display: flex;
@@ -144,12 +148,175 @@ main{
     gap: 1em;
     align-items: center;
 }
+.img__container>img{
+   width:100%;
+}
 .btn{
     display:inline-block;
-    padding:1em;
-    border-radius: 1em;
+    padding:1em 1.5em;
+    border-radius: 0.75em;
     color: var(--AlmostWhite);
     background-color: var(--AlmostBlack);
+    margin-bottom: 1em;
+    transition: all 250ms ease-in;
     
 }
+.btn:hover{
+    background: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+    outline: 1px solid var(--AlmostBlack);
 
+}
+.remove01{
+    display:none;
+}
+.remove02{
+   display: block;
+}
+
+/*portrait*/
+@media (min-width: 768px) {
+    header{
+        display: flex;
+        align-items: center;
+        gap:1em;
+    }
+
+    .nav__bar{
+        background-image: none;
+        padding:0 0 1em 0;
+        width:100%;
+        overflow: visible;
+    }
+    .nav__bar .list > li > a{
+        font-size:0.95rem;
+    }
+    .nav__bar::before{
+        content: none;
+    }
+    .toggler__Btn{
+        display: none;
+    }
+    
+
+    .list{
+        all:unset;
+        display:flex;
+        list-style:none;
+        gap:1em;
+        padding-top:0;
+        height:auto;
+     
+    }
+    .nav__bar .list a:hover{
+        color: var(--AlmostBlack);
+    }
+    .nav__bar .list > li{
+        margin-bottom:0;
+        position: relative;
+        padding:0.25em 0.5em;
+    }
+    
+    .dropwonLink{
+        padding-bottom:1em;
+    }
+    
+    .list .dropwonLink:hover .sub__list{
+        display: block;
+    }
+    .list .dropwonLink img{
+        transition: all 250ms ease-in;
+    }
+    .list > li:first-child{
+        margin-left:2em;
+    }
+    .list .dropwonLink:hover  img{
+        transform: rotate(180deg);
+    }
+    .sub__list{
+        transition: transform 250ms ease-in;
+        position: absolute;
+        overflow: auto;
+        top: 25px;
+        left: -10px;
+        z-index: 99;
+        background-color: white;
+        border-radius: 0.5em;
+        padding: 1em 3em 0em 0.5em;
+        margin: 0;
+          margin-top: 0px;
+        box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+        margin-top: 0.5em;
+        width: 160px;
+
+    }
+    .sub__list img{
+        display: inline-block;
+        position: relative;
+        top:0.2em;
+    }
+    .sub__list >li > a{
+        font-size:0.8rem !important;
+        
+    }
+    .inLarge{
+        display: block;
+    }
+
+    .first{
+        margin-left: auto;
+    }
+
+    .inLarge a{
+        padding:0.25em 0.5em;
+        transition:all 250ms ease-in;
+    }
+
+    .inLarge a:hover{
+       outline:1px solid #000;
+       border-radius:0.5em;
+       
+       
+    }
+    .container{
+        display:flex;
+        align-items: center;
+        gap:2em;
+      
+        max-width:1033px;
+
+    }
+    .col {
+       width:50%;
+       flex-basis:30rem;
+    }
+ 
+    .col:last-child{
+        display: block;
+        align-self: center;
+    }
+    .col:first-child{
+        align-self: stretch;
+        align-items: flex-start;
+        padding-top:6em;
+    }
+    .col p{
+        text-align: start;
+    }
+    .title{
+        text-align:start;
+        font-size:4.5rem;
+        margin-bottom:0.5em;
+  
+    }
+    .title span{
+        display: block;
+    }
+    .btn{
+        margin-top:2em;
+        align-self: flex-start;
+    }
+    .img__container{
+        margin-top:auto;
+    }
+}
