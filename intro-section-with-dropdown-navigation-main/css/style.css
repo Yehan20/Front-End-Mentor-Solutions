@@ -237,7 +237,7 @@ main{
         transition: transform 250ms ease-in;
         position: absolute;
         overflow: auto;
-        top: 25px;
+        top: 19px;
         left: -10px;
         z-index: 99;
         background-color: white;
