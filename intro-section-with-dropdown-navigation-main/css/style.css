@@ -114,6 +114,7 @@ header{
 }
 .list  a{
       color: var(--MediumGray);
+      font-size: 0.9rem;
 }
 .sub__list  >li{
     margin-bottom: 1em;
@@ -150,9 +151,13 @@ main{
     display: flex;
     gap: 1em;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .img__container>img{
    width:100%;
+   max-width:80px;
 }
 .btn{
     display:inline-block;
@@ -329,5 +334,11 @@ main{
     }
     .img__container{
         margin-top:auto;
+        flex-wrap: nowrap;
+       align-self: stretch;
+       justify-content: start;
+    }
+    .img__container>img{
+        max-width:68px;
     }
 }
