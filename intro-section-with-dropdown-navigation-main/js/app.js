@@ -9,14 +9,14 @@ document.querySelector('#toggleBtn').addEventListener("click",()=>{
     let cross = document.querySelector('.cross');
     
     if(cross.classList.contains('no')){
-      cross.src=`images/icon-close-menu.svg`
+      cross.src=`../images/icon-close-menu.svg`
       cross.classList.replace("no","yes");
       list.classList.add('move');
       nav.classList.add('nav__bar__toggled')
     }
 
     else{
-        cross.src=`images/icon-menu.svg`
+        cross.src=`../images/icon-menu.svg`
         cross.classList.replace("yes","no");
         list.classList.remove('move');
         nav.classList.remove('nav__bar__toggled')
