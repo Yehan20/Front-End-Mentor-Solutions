@@ -183,7 +183,7 @@ main{
         display: flex;
         align-items: center;
         gap:1em;
-        padding-top: 2em;
+        padding-top: 1.8em;
       
     }
 
@@ -219,7 +219,7 @@ main{
     .nav__bar .list > li{
         margin-bottom:0;
         position: relative;
-        padding:0.25em 0.5em;
+        padding:0.5em;
     }
     
     .dropwonLink{
@@ -283,11 +283,18 @@ main{
        
        
     }
+    .active{
+        outline:1px solid #000;
+        border-radius:0.5em;
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+        
+    }
     .container{
         display:flex;
         align-items: center;
         gap:2em;
-      
+        justify-content: space-around;
         max-width:1100px;
 
     }
@@ -303,7 +310,7 @@ main{
     .col:first-child{
         align-self: stretch;
         align-items: flex-start;
-        padding-top:6em;
+        padding-top:5em;
     }
     .col p{
         text-align: start;
