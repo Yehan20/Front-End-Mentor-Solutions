@@ -50,7 +50,7 @@ const dropDownFunction =(e)=>{
 
 
 //  Drop Down List Affect
-const dropDown  = document.querySelectorAll("#dropDown");
+const dropDown  = document.querySelectorAll(".dropDown");
 dropDown.forEach((dropDown)=>{
      dropDown.addEventListener('click',dropDownFunction)
 })

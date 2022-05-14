@@ -12,6 +12,7 @@ body{
     margin:0;
     font-family: var(--ff);
     font-size: 1.12rem;
+    background-color: var(--AlmostWhite);
   
     /* background-color: rgba(0, 0,0,0.4); */
 }
@@ -28,6 +29,7 @@ ul{
 
 header{
     padding-top: 1em;
+    background-color: var(--AlmostWhite);
    
 
 }
@@ -118,6 +120,7 @@ header{
 }
 main{
     margin:1em 0;
+    background-color: var(--AlmostWhite);
 }
 .col:last-child{
     display: none;
@@ -180,6 +183,8 @@ main{
         display: flex;
         align-items: center;
         gap:1em;
+        padding-top: 2em;
+      
     }
 
     .nav__bar{
@@ -283,7 +288,7 @@ main{
         align-items: center;
         gap:2em;
       
-        max-width:1033px;
+        max-width:1100px;
 
     }
     .col {
