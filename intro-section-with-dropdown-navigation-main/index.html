@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,7 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
 </head>
+
 <body>
 
   <!-- Features
@@ -29,38 +31,63 @@
   Learn more -->
 
   <header>
-     <div class="logo__toggler">
-        <img src="images/logo.svg" class="logo" alt="Logo Image">
-        <button class="toggler__Btn" id="toggleBtn" >
-          <img src="images/icon-menu.svg" class="cross no"  alt="Toggler Option">
-        </button>
+    <div class="logo__toggler">
+      <img src="images/logo.svg" class="logo" alt="Logo Image">
+      <button class="toggler__Btn" id="toggleBtn">
+        <img src="images/icon-menu.svg" class="cross no" alt="Toggler Option">
+      </button>
     </div>
     <nav class="nav__bar">
-         <ul class="list">
-           <li><a href="#" id="dropDown">Features <img src="images/icon-arrow-down.svg" class="dropdown__arrow" alt="Arrow" ></a>
-             <ul class="sub__list">
-               <li><a href="#"> <img src="images/icon-todo.svg" alt="Todo"> Todo List</a></li>
-               <li><a href="#"> <img src="images/icon-calendar.svg" alt="Calender"> Calender</a></li>
-               <li><a href="#">
-                 <img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
-               <li><a href="#"> <img src="images/icon-planning.svg" alt="Planning"> Planing</a></li>
-             </ul>
-          </li>
-           <li><a href="#" id="dropDown">Company <img src="images/icon-arrow-down.svg" class="dropdown__arrow" alt="Arrow" ></a>
-               <ul class="sub__list">
-                  <li><a href="#">History</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Blog</a></li>
-               </ul>
-            </li>
+      <ul class="list">
+        <li><a href="#" id="dropDown">Features <img src="images/icon-arrow-down.svg" class="dropdown__arrow"
+              alt="Arrow"></a>
+          <ul class="sub__list">
+            <li><a href="#"> <img src="images/icon-todo.svg" alt="Todo"> Todo List</a></li>
+            <li><a href="#"> <img src="images/icon-calendar.svg" alt="Calender"> Calender</a></li>
+            <li><a href="#">
+                <img src="images/icon-reminders.svg" alt=""> Reminders</a></li>
+            <li><a href="#"> <img src="images/icon-planning.svg" alt="Planning"> Planing</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="dropDown">Company <img src="images/icon-arrow-down.svg" class="dropdown__arrow"
+              alt="Arrow"></a>
+          <ul class="sub__list">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
 
-           <li><a href="#">Careers</a></li>
+        <li><a href="#">Careers</a></li>
 
-           <li><a href="#">About</a></li>
-         </ul>
-     
+        <li><a href="#">About</a></li>
+      </ul>
+
     </nav>
   </header>
+  <main>
+    <div class="container">
+      <div class="col">
+        <h1 class="title">
+          Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="btn"> Learn more</a>
+        <div class="img__container">
+          <img src="images/client-databiz.svg" alt="Data Biz Img">
+          <img src="images/client-audiophile.svg" alt="Audiophile Img">
+          <img src="images/client-meet.svg" alt="Meet Img">
+          <img src="images/client-maker.svg" alt="Marker Img">
+        </div>
+      </div>
+      <div class="col">
+        <img src="images/image-hero-desktop.png" alt="Desktop Image">
+      </div>
+    </div>
+  </main>
   <script src="js/app.js"></script>
 </body>
+
 </html>
