@@ -35,7 +35,7 @@ Users should be able to:
 
 
 ### Links
- [Add solution URL ](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-BJQKpkTL9)
+ [solution URL ](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-BJQKpkTL9) <br>
  [live site URL](https://yn-intro-section-with-dropdown-navigation.netlify.app/)
 
 ## My process
