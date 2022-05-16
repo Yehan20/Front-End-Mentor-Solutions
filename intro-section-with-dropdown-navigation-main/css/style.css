@@ -53,7 +53,7 @@ header{
     content: '';
     position:absolute;
     inset:0;
-    height:200vh;
+    height:250vh;
     background:rgba(0, 0, 0, 0.8);
 }
 .toggler__Btn{
@@ -69,7 +69,8 @@ header{
     top:0;
     right:0;
     width:50%;
-    height:200vh;
+    bottom:0;
+    height:250vh;
     background-color:var(--AlmostWhite);
     margin-top:0;
     padding: 3em 1em;
