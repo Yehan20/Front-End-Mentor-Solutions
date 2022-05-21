@@ -131,7 +131,7 @@ main{
         max-width:1100px;
     }
     .col__1{
-        padding-top:4em;
+        padding-top:5em;
         display:flex;
         justify-content: space-between;
     }
@@ -225,7 +225,7 @@ main{
         margin-top:4em;
     }
     .first__section h1.title{
-        font-size:3.3rem;
+        font-size:3.6rem;
         line-height:0.8;
     }
 }
