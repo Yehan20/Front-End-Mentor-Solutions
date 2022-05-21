@@ -3,59 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    10,000+ of our users love our products.
+    <main>
+         <div class="container col__1">
+              <div class="first__section">
+                <h1 class="title">10,000+ of our users love our products.</h1>
+                <p class="para">
+                  We only provide great products combined with excellent customer service.
+                  See what our satisfied customers are saying about our services.
+                </p>
+              </div>
+              <div class="second__section">
+                   <div class="col one">
+                    <div class="stars">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                   </div>
+                    <h3>Rated 5 Stars in Reviews</h3>
+                   
+                   </div>
+                   <div class="col two">
+                    <div class="stars">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                   </div>
+                    <h3>Rated 5 Stars in Report Guru</h3>
+                  
+                   </div>
+                   <div class="col three">
+                    <div class="stars">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                      <img src="images/icon-star.svg" alt="Star">
+                     </div>
+                    <h3>Rated 5 Stars in BestTech</h3>
+                   
+                   </div>
+              </div>
+         </div>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+         <div class="container col__2">
+             <div class="card">
+                 <div class="card__top">
+                     <img src="images/image-colton.jpg" alt="Colton">
+                     <h3>Colton Smith <br> 
+                       <span>Verified Buyer<span></h3>
+                 </div>
+                 <div class="card__body">
+                   <p>
+                    "We needed the same printed design as the one we had ordered a week prior.
+                    Not only did they find the original order, but we also received it in time.
+                    Excellent!"
+                   </p>
+                 </div>
+             </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+             <div class="card">
+                  <div class="card__top">
+                    <img src="images/image-irene.jpg" alt="Irene">
+                    <h3>Irene Roberts <br> 
+                      <span>Verified Buyer<span></h3>
+                </div>
+                <div class="card__body">
+                  <p>
+                    "Customer service is always excellent and very quick turn around. Completely
+                    delighted with the simplicity of the purchase and the speed of delivery."                
+                  </p>
+                </div>
+             </div>
+
+             <div class="card">
+                <div class="card__top">
+                  <img src="images/image-anne.jpg" alt="Anne">
+                  <h3>Anne Wallace<br> 
+                    <span>Verified Buyer<span></h3>
+              </div>
+              <div class="card__body">
+                <p>
+                  Verified Buyer
+                  "Put an order with this company and can only praise them for the very high
+                  standard. Will definitely use them again and recommend them to everyone!"
+                </p>
+              </div>
+             </div>
+         </div>
+    </main>
   </body>
 </html>

@@ -1,0 +1,169 @@
+:root{
+    --VeryDarkMagenta:hsl(300, 43%, 22%);
+    --SoftPink:hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --ff: 'League Spartan', sans-serif;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size:0.9375rem;
+    margin:0;
+    font-family: var(--ff);
+    min-height: 100vh;
+ 
+}
+
+main{
+    background-image: url('../images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top 50%;
+    padding:1em;
+    background-size:100%;
+}
+
+.container{
+    max-width:1200px;
+    width:95%;
+    margin:0 auto;
+}
+
+/*-------------- First secton css start----------------- */
+
+.first__section {
+    margin-bottom:0.4em;
+}
+.first__section .title{
+    font-size:2.9rem;
+    line-height:0.8;
+    text-align: center;
+    background-size:100%;
+    background-position: center;
+    color: var(--VeryDarkMagenta);
+}
+.first__section .para{
+    text-align: center;
+    font-size:1.2rem;
+    color: var(--DarkGrayishMagenta);
+    font-weight:500;
+}
+.second__section{
+
+ 
+}
+.second__section .col{
+    background-color: var(--LightGrayishMagenta);
+    padding:0.5em 0 0.2em 0;
+    margin-bottom:0.5em;
+    border-radius:0.4em;
+    text-align: center;
+ 
+}
+.second__section .col h3{
+    color: var(--VeryDarkMagenta);
+}
+
+/*-------------- First secton css start----------------- ---*/
+
+
+
+/*------------- second section  css start ------------------ */
+.col__2{
+    margin-top:3em;
+}
+.card{
+    background-color: var(--VeryDarkMagenta);
+    border-radius:0.5em;
+    padding:0.5em 3em;
+    margin-bottom:0.75em;
+}
+.card .card__top{
+    display: flex;
+    align-items: center;
+    gap:1.4em;
+}
+.card .card__top h3{
+    color: #fff;
+}
+.card .card__top span{
+    color: var(--SoftPink);
+    font-weight: 300;
+    opacity:0.8;
+}
+.card img{
+    border-radius:50%;
+    width:50px;
+}
+
+.card .card__body p{
+    color: #fff;
+    font-size:1.1rem;
+}
+
+/*------------- second section  css end ------------------ */
+
+@media screen and (min-width:768px ) {
+    main{
+        background-image: url('../images/bg-pattern-top-desktop.svg');
+        background-position: left top;
+        background-size: 50%;
+    }
+    .col__1{
+        padding-top:8em;
+        display:flex;
+        justify-content: space-around;
+    }
+ 
+    .first__section{
+       max-width:400px;
+    }
+    .first__section h1.title{
+        line-height: 1;
+    }
+    .first__section h1.title, .first__section p.para{
+        text-align: left;
+        
+    }
+    .first__section p.para{
+       margin-bottom:0;
+    }
+    .second__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;
+    }
+    .stars{
+        display: flex;
+    }
+
+    .second__section .col {
+        padding:0 3em;
+        display:flex;
+        align-items: center;
+        gap:3em;
+        min-width:415px;
+        margin-bottom:1em;
+    }
+    .second__section .col:first-child{
+         margin-left: auto;
+         margin-right:7em;
+    }
+    .second__section .col:nth-child(2){
+         margin-left:auto;
+         margin-right:2em;
+    }
+    .second__section .col:last-child{
+        margin-left: auto;
+    }
+
+
+    .col__2{
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    
+}
