@@ -221,7 +221,8 @@ main{
 }
 @media screen and (min-width:992px ){
     .second__section{
-        align-self: flex-end;
+        
+        margin-top:4em;
     }
     .first__section h1.title{
         font-size:3.3rem;
