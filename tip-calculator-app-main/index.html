@@ -7,6 +7,11 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -41,25 +46,25 @@
       <div class="calculator">
         <div class="calculator__top">
           <div>
-            <label for="bill">Bill</label>
-            <input type="text" id="bill" aria-placeholder="">
+            <label id="bill__label" for="bill">Bill</label>
+            <input type="number" id="bill" aria-placeholder="">
           </div>
 
           <div>
-            <h2>Select Tip <img src="./images/icon-dollar.svg" alt="Dollar Icon"></h2>
+            <h2>Select Tip <small>%</small></h2>
             <div class="tips">
               <button class="tip">5%</button>
               <button class="tip">10%</button>
               <button class="tip">15%</button>
               <button class="tip">25%</button>
               <button class="tip">50%</button>
-              <button class="tip">Custom</button>
+              <input type="number" id="custom" class="tip" placeholder="Custom">
             </div> 
           </div> 
 
           <div>
-             <label for="people">Number of People</label>
-             <input type="text" class="input" >
+             <label for="people" id="people__label">Number of People</label>
+             <input type="number" id="people"  >
           </div>
 
         </div>
