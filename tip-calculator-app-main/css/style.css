@@ -21,9 +21,7 @@ body{
     
     background-color: var(--Lightgrayishcyan);
 }
-main{
-    
-}
+
 .container{
     max-width:1140px;
     width:95%;
@@ -153,7 +151,7 @@ input#custom{
 .calculator__bottom{
     background-color: var(--Verydarkcyan);
     padding:1em;
-    border-radius:0.4em;
+    border-radius:0.5em;
     color: #fff;
 }
 .calculator__bottom div{
@@ -178,12 +176,67 @@ input#custom{
 .btn-reset{
     display: inline-block;
     margin:0 auto;
-    padding:1em;
+    padding:0.5em;
     width:100%;
     text-transform: uppercase;
     color: var(--Verydarkcyan);
     background-color: var(--Strongcyan);
     border:0;
     cursor: pointer;
-    border-radius:0.2em;
+    border-radius:0.3em;
+    font-family: var(--ff);
+    text-transform: uppercase;
+    font-size:1.2rem;
+    transition:all 250ms ease-in;
+}
+.btn-reset:hover{
+    background-color: var(--Lightgrayishcyan);
+}
+
+@media screen and (min-width:768px) {
+    .calculator{
+       display: flex;
+       gap:1em;
+    }
+    .calculator{
+       max-width:850px;
+       margin:auto;
+    }
+    .calculator__bottom div{
+        align-items: center;
+    }
+    .calculator__bottom h3{
+        font-size:0.9rem;
+        margin-bottom:0;
+    }
+    .calculator__bottom,.calculator__top{
+     width:100%;
+    }
+    .calculator__bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      
+    }
+    .calculator__bottom p{
+        font-size:3rem
+    }
+    .calculator__top div:last-child{
+        margin-top:1.5em;
+    }
+    .tips{
+        gap:0.7em;
+    }
+    .tip{
+      
+        width:30%;
+        padding:0.6em 0.8em; 
+        margin-bottom: 0.3em;
+    }
+    .calculator__top #bill__label::before,.calculator__top #people__label::before{
+        top:53px;
+    }
+    .calculator__top #bill,#people{
+       padding:0.4em 0.5rem;
+    }
 }
