@@ -18,25 +18,6 @@
 </head>
 
 <body>
-  <!-- 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-  Total
-  / person
-
-  Reset -->
   <main>
     <div class="container">
       <h1 class="title">
@@ -47,18 +28,18 @@
         <div class="calculator__top">
           <div>
             <label id="bill__label" for="bill">Bill</label>
-            <input type="number" id="bill" aria-placeholder="">
+            <input type="number" id="bill" required aria-placeholder="">
           </div>
 
           <div>
             <h2>Select Tip <small>%</small></h2>
             <div class="tips">
-              <button class="tip">5%</button>
-              <button class="tip">10%</button>
-              <button class="tip">15%</button>
-              <button class="tip">25%</button>
-              <button class="tip">50%</button>
-              <input type="number" id="custom" class="tip" placeholder="Custom">
+              <button type="button" data-id="1" disabled class="tip">5%</button>
+              <button type="button" data-id="2" disabled class="tip">10%</button>
+              <button type="button" data-id="3" disabled class="tip">15%</button>
+              <button type="button" data-id="4" disabled class="tip">25%</button>
+              <button type="button" data-id="5" disabled class="tip">50%</button>
+              <input type="number"  data-id="6" disabled id="custom" class="tip" placeholder="Custom">
             </div> 
           </div> 
 
@@ -78,7 +59,7 @@
            </div>
            
            <div>
-            <h3>Tip amount <br> <span>
+            <h3>Total <br> <span>
               / Person
             </span> </h3>
             <p>$0.00</p>
@@ -91,7 +72,7 @@
       </div>
     </div>
   </main>
-
+<script src="js/app.js"></script>
 </body>
 
 </html>

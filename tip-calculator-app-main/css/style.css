@@ -95,6 +95,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+button:disabled{
+    opacity:0.6;
+    transition: all 250ms ease-in;
+    
+}
 
 .calculator__top h2{
     font-size:1rem;
@@ -120,7 +125,7 @@ input[type=number] {
     transition:all 250ms ease-in;
     margin-bottom:1em;
 }
-.tip:hover{
+.tip:hover,.selected{
    background-color: var(--Strongcyan);
    color: var(--Verydarkcyan);
 }
@@ -202,6 +207,9 @@ input#custom{
        max-width:850px;
        margin:auto;
     }
+    .calculator__bottom{
+        padding: 1em 2em 2em 2em;
+    }
     .calculator__bottom div{
         align-items: center;
     }
@@ -238,5 +246,8 @@ input#custom{
     }
     .calculator__top #bill,#people{
        padding:0.4em 0.5rem;
+    }
+    .btn-reset{
+        margin-top: 3em;
     }
 }
