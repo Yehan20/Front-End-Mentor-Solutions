@@ -22,7 +22,7 @@ body{
     background-color: var(--Lightgrayishcyan);
 }
 main{
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .container{
@@ -37,8 +37,8 @@ main{
     text-align: center;
     text-transform: uppercase;
     color: var(--Darkgrayishcyan);
-    letter-spacing: 2px;
-    margin-bottom: 0.5em;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
     font-size:1.4rem;
     margin-top:0;
 }
@@ -225,7 +225,7 @@ input#custom{
     .calculator{
        display: flex;
        gap:1em;
-       padding: 2em 2em 3em 2em;
+       padding: 3em 1em 2em 2em;
     }
     .container{
         width:95%;
