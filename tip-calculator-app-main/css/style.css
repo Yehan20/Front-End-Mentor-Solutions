@@ -24,9 +24,9 @@ body{
 
 .container{
     max-width:1140px;
-    width:95%;
+    width:100%;
     margin:0 auto;
-    padding:0.5em;
+    padding:0em;
     
 }
 
@@ -55,7 +55,8 @@ body{
 
 .calculator__top #bill,#people{
     display:block;
-    padding:0.6em 0.5em;
+    /* padding:0.6em 0.5em; */
+    padding:0.2em 0.5em;
     width:100%;
     font-size:1.5rem;
     margin-top:0.5em;
@@ -73,7 +74,7 @@ body{
 .calculator__top #bill__label::before{
     content:'';
     position: absolute;
-    top:60px;
+    top:50px;
     z-index:2;
     left:10px;
     width:20px;
@@ -103,6 +104,7 @@ button:disabled{
 #people__label{
     display: flex;
     justify-content: space-between;
+    font-size: clamp(0.7rem,2.5vw,0.83rem);
 }
 .error{
     display: none;
@@ -125,8 +127,8 @@ button:disabled{
     border:0;
     display:inline-block;
     padding:0.7em 1em; 
-    font-size:1.2rem;
-    width:47%;
+    font-size:clamp(1rem,2.5vw,1.2rem);
+    width:45%;
     color: var(--White);
     background-color: var(--Verydarkcyan);
     border-radius:0.2em;
@@ -144,12 +146,14 @@ input#custom{
     background-color: var(--Verylightgrayishcyan);
     color: var(--Darkgrayishcyan);
     border-radius:0.2em;
+    font-size: 1rem;
+    padding: 0.9em;
 }
 
 .calculator__top #people__label::before{
     content:'';
     position: absolute;
-    top:60px;
+    top:43px;
     z-index:2;
     left:10px;
     width:20px;
@@ -178,9 +182,10 @@ input#custom{
 }
 .calculator__bottom h3{
     margin:0 0 1em 0;
+    font-size: 1.2rem;
 }
 .calculator__bottom p{
-    font-size:2.1rem;
+    font-size:1.5rem;
     color: var(--Strongcyan);
     margin-bottom:0;
     margin-top: 0;
@@ -209,10 +214,15 @@ input#custom{
     background-color: var(--Lightgrayishcyan);
 }
 
+
 @media screen and (min-width:768px) {
     .calculator{
        display: flex;
        gap:1em;
+    }
+    .container{
+        width:95%;
+        padding:0.5em;
     }
     .calculator{
        max-width:850px;
@@ -228,6 +238,9 @@ input#custom{
         font-size:0.9rem;
         margin-bottom:0;
     }
+    .calculator__bottom p{
+        font-size: 2.1rem;
+    }
     .calculator__bottom,.calculator__top{
      width:100%;
     }
@@ -236,6 +249,10 @@ input#custom{
         flex-direction: column;
         justify-content: space-around;
       
+    }
+    .calculator__top #bill ,#people{
+        padding:0.6em 0.5em;
+
     }
     .calculator__bottom p{
         font-size:3rem
@@ -253,7 +270,7 @@ input#custom{
         margin-bottom: 0.3em;
     }
     .calculator__top #bill__label::before,.calculator__top #people__label::before{
-        top:53px;
+        top:50px;
     }
     .calculator__top #bill,#people{
        padding:0.4em 0.5rem;
