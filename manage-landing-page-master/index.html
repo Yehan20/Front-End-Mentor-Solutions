@@ -5,24 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Manage landing page</title>
   <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
-<body class="bg-red-800 text-bold">
+<body>
 
-  Pricing
+  <!-- Pricing
   Product
   About Us
   Careers
   Community
-  <h1 class="text-bold">wqfwqef ee</h1>
+
   Get Started
 
   Bring everyone together to build better products.
@@ -90,13 +87,48 @@
 
   Updates in your inbox…
   Go
+  Copyright 2020. All Rights Reserved -->
 
-  Copyright 2020. All Rights Reserved
+  <header class="pt-8">
+     <div class="container mx-auto pt-8">
+       <div class="flex items-center ">
+         <div class="img-container pt-1">
+            <img src="images/logo.svg" alt="Logo">
+         </div>
+         <nav class="relative ml-auto">
+           <ul class="flex gap-x-6">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li class="ml-auto"><a href="#" class="custom-button">Get Started</a></li>
+           </ul>
+         </nav>
+       </div>
+     </div>
+  </header>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- Section 1 start -->
+  <section class="section-1 mt-10 pt-10">
+    <div class="container mx-auto flex gap-x-10">
+      <div class="sec-1-a pt-10 w-full">
+        <h1 class="text-DarkBlue-clr text-6xl font-bold mb-8 leading-tight">
+          Bring everyone together to build better products.
+        </h1>
+        <p class="text-lg  my-10 ">
+          Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.
+        </p>
+        <a href="#" class='custom-button'>
+          Get Started
+        </a>
+      </div>
+      <div class="sec-1-b w-full pt-10">
+        <img src="images/illustration-intro.svg" alt="illustration-intro">
+      </div>
+    </div>
+  </section>
+  <!-- Section 1 end -->
 </body>
 </html>
