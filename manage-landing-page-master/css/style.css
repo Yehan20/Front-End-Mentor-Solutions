@@ -38,7 +38,7 @@ nav{
 .custom-button{
    border-radius: 4em;
    background-color: var(--red-clr);
-   padding: 1.1em 2.7em;
+   padding: 0.8em 2.2em;
    color: var(--VaryLightGray-clr);
    display: inline-block;
 }
@@ -80,10 +80,11 @@ nav{
 }
 .inner-slide{
     background-color: var(--VaryLightGray-clr) ;
-    min-height: 300px;
-    padding: 4em 0em 0 0em;
+    min-height: 250px;
+    padding: 4em 0em 2em 0em;
     margin: 0 10px;
     /* max-width: 400px; */
+    margin-bottom: 4em;
     
 }
 .inner-slide p{
@@ -94,4 +95,13 @@ nav{
 }
 .inner-slide:nth-child(2){
     /* margin: 0 10px; */
+}
+.section-4{
+    background-color: var(--red-clr);
+    background-image: url('../images/bg-simplify-section-desktop.svg');
+    padding: 3.5em 0;
+}
+.section-4 .custom-button{
+   background-color:  #fff!important;
+   color: var(--red-clr) !important;
 }
