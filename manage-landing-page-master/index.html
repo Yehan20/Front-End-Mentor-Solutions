@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/output.css">
   <link rel="stylesheet" href="css/style.css">
-
+ 
+  <script src="js/jquery.min.js"></script>
   
 </head>
 <body>
@@ -91,13 +92,17 @@
   Go
   Copyright 2020. All Rights Reserved -->
 
-  <header class="pt-8">
+  <header class="pt-8 relative">
      <div class="container mx-auto pt-8">
        <div class="flex items-center ">
          <div class="img-container pt-1">
             <img src="images/logo.svg" alt="Logo">
          </div>
-         <nav class="relative ml-auto">
+         <button class="hidden toggle-btn">
+          <img class="hamburger" src="images/icon-hamburger.svg" alt="icon-hamburger">
+          <img class="cross" src="images/icon-close.svg" alt="icon-hamburger">
+         </button>
+         <nav class="ml-auto">
            <ul class="flex gap-x-6 items-center">
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Products</a></li>
@@ -147,9 +152,9 @@
       <div class="sec-1-b w-full pt-10">
         <div class="flex gap-x-10 mb-10">
           <h4 class="">01</h4>
-          <div class="w-5/6">
+          <div class="w-5/6 go-full">
              <h3 class="text-DarkBlue-clr text-base mt-3  font-bold mb-7 ">
-              Track company-wide progress
+              <span class="mobile-counter d-none">01</span> Track company-wide progress
              </h3>
              <p class="text-base font-light leading-7 ">
               See how your day-to-day tasks fit into the wider vision. Go from 
@@ -160,9 +165,9 @@
         </div>
         <div class="flex mb-10 gap-x-10">
           <h4>02</h4>
-          <div class="w-5/6" >
+          <div class="w-5/6 go-full" >
              <h3 class="text-DarkBlue-clr text-base mt-3  font-bold mb-7 ">
-              Advanced built-in reports
+              <span class="mobile-counter d-none">02</span> Advanced built-in reports
              </h3>
              <p class="text-base font-light leading-7 ">
               Set internal delivery estimates and track progress toward company 
@@ -173,9 +178,9 @@
         </div>
         <div class="flex gap-x-10">
           <h4 >03</h4>
-          <div class="w-5/6">
-             <h3 class="text-DarkBlue-clr text-lg mt-3  font-bold mb-7 ">
-              Everything you need in one place
+          <div class="w-5/6 go-full">
+             <h3 class="text-DarkBlue-clr text-base mt-3  font-bold mb-7 ">
+              <span class="mobile-counter d-none">03</span> Everything you need in one place
              </h3>
              <p class="text-base font-light leading-7 ">
               Everything you need in one place
@@ -242,7 +247,7 @@
     </div>
   </section>
 
-  <section class="section-4  mt-10 mb-3">
+  <section class="section-4  mt-10">
     <div class="container mx-auto flex gap-x-10 justify-between items-center">
       <h2 class="text-4xl text-white font-bold">Simplify How you team <br> works today</h2>
       <a href="#" class='custom-button bg-white'>
@@ -250,8 +255,59 @@
       </a>
     </div>
   </section>
-  <script src="js/jquery.min.js"></script>
+
+  <footer class="pt-10 pb-10">
+    <div class="footer-container container mt-10 flex mx-auto">
+        <div class="footer-col one w-full">
+           <img src="images/logo-white.svg" alt="Logo">
+           <div class="social-media flex  gap-x-3">
+             <a href="#" title="Click to Visit"><img src="images/icon-facebook.svg" alt="Social Icon">
+               <img src="images/icon-facebook-hvr.svg" class="hvr-icon" alt="Social Icon">
+            </a>
+             <a href="#" title="Click to Visit"><img src="images/icon-youtube.svg" alt="Social Icon">
+              <img src="images/icon-youtube-hvr.svg" class="hvr-icon" alt="Social Icon">
+            </a>
+             <a href="#" title="Click to Visit"><img src="images/icon-twitter.svg" alt="Social Icon">
+              <img src="images/icon-twitter-hvr.svg" class="hvr-icon" alt="Social Icon">
+            </a>
+             <a href="#" title="Click to Visit"><img src="images/icon-pinterest.svg" alt="Social Icon">
+              <img src="images/icon-pinterest-hvr.svg" class="hvr-icon" alt="Social Icon">
+            </a>
+             <a href="#" title="Click to Visit"><img src="images/icon-instagram.svg" alt="Social Icon">
+              <img src="images/icon-instagram-hvr.svg" class="hvr-icon" alt="Social Icon">
+            </a>
+             
+           </div>
+        </div>
+        <div class="footer-col two w-full">
+           <ul>
+             <li><a href="#" class="text-white" title="Click to visit">Home</a></li>
+             <li><a href="#" class="text-white" title="Click to visit">Pricing</a></li>
+             <li><a href="#" class="text-white" title="Click to visit">Products</a></li>
+             <li><a href="#" class="text-white" title="Click to visit">About Us</a></li>
+           </ul>
+        </div>
+        <div class="footer-col third-3 w-full">
+          <ul>
+            <li><a href="#" class="text-white" title="Click to visit">Careers</a></li>
+            <li><a href="#" class="text-white" title="Click to visit">Community</a></li>
+            <li><a href="#" class="text-white" title="Click to visit">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col fourth-4 w-full flex flex-col justify-between">
+            <div class="input-box relative gap-x-2 flex">
+               <input required type="text" placeholder="Updates in your inbox">
+               <span class="error">Please insert a valid email</span>
+               <button>Go</button>
+            </div>
+            <p class="text-white copy-right text-right">Copyright 2020. All Rights Reserved</p>
+        </div>
+        <p class="hidden cr-mobile text-white copy-right">Copyright 2020. All Rights Reserved</p>
+    </div>
+  </footer>
+  
   <script src="js/slick.js"></script>
+  <script src="js/app.js"></script>
   <script>
     
 $('.slider').slick({
@@ -259,7 +315,18 @@ $('.slider').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000,
-  dots:false
+  dots:false,
+  responsive: [
+          {
+            breakpoint: 767,
+            settings:{
+            slidesToShow: 1,
+            slidesToScroll:1,
+            dots:true
+            }
+           
+          }
+        ]
 });
   </script>
 </body>
