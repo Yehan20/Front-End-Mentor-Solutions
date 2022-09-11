@@ -96,13 +96,16 @@ nav {
 
 
 }
+.section-3  .custom-button{
+    margin-bottom: 5em;
+}
 
 .inner-slide {
     background-color: var(--VaryLightGray-clr);
     min-height: 250px;
     padding: 4em 0em 2em 0em;
     margin: 0 10px;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
 
 }
 
@@ -248,7 +251,9 @@ footer .input-box input {
     header {
         padding: 1em;
     }
-
+    .img-container{
+        align-self: flex-start !important;
+    }
     nav {
         display: none;
         position: fixed;
@@ -318,6 +323,10 @@ footer .input-box input {
 
     .section-1 .container {
         flex-direction: column;
+    }
+    .section-1{
+        margin: 1em 0 !important;
+        padding: 0 !important;
     }
 
     h1 {
@@ -503,8 +512,11 @@ footer .input-box input {
 
 }
 
-@media screen and (max-width:340px) {
+@media screen and (max-width:360px) {
     .section-2 .sec-1-b h3 {
         font-size: 0.8rem !important;
+    }
+    .mobile-counter{
+        margin-right: 0.3em;
     }
 }
