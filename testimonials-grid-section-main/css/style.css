@@ -1,0 +1,21 @@
+:root{
+    --Moderateviolet:hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+    --ff-main:'Barlow Semi Condensed', sans-serif;
+
+}
+*,*::after,*::before{
+     box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    min-height: 100vh;
+    font-size: 13px;
+}
+img{
+     max-width: 100%;
+}
