@@ -153,9 +153,9 @@ main {
 
 
 @media (min-width: 1440px) and (max-width: 1599px) { 
-   .box{
+   /* .box{
     padding: 160px;
-   }
+   } */
 }
 
 /*portrait*/
