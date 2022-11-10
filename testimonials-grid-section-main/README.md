@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./ui/lg.png.jpg)
-![](./ui/sm.png.jpg)
+![](./ui/lg.png)
+![](./ui/sm.png)
 
 ### Links
 
