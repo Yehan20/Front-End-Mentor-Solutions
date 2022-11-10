@@ -28,7 +28,7 @@ main {
 }
 
 .box {
-    padding: 118px;
+    padding: 176px 118px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
