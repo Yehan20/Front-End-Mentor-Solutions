@@ -28,7 +28,7 @@ main {
 }
 
 .box {
-    padding: 190px 105px;
+    padding: 190px 90px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -38,7 +38,7 @@ main {
 .box .item {
     border-radius: 0.6em;
     background-color: lightcyan;
-    padding: 20px;
+    padding: 10px 30px;
 }
 
 .box .item:first-child {
@@ -87,7 +87,7 @@ main {
 
 .box .item h3 {
     margin-top: 0;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 /* each items unique css */
@@ -134,6 +134,10 @@ main {
 .box .item:first-child h3 {
     padding-right: 17px;
     line-height: 1.2;
+}
+.box .item:nth-child(3) h3,
+.box .item:last-child h3 {
+    color: var(--Verydarkgrayishblue);
 }
 
 .box .item:nth-child(3) h4,
