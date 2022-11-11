@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [click here](https://github.com/Yehan20/Front-End-Mentor-Solutions/tree/main/testimonials-grid-section-main)
+- Live Site URL: [click here](https://yn-testimonials-grid-section.netlify.app/)
 
 ## My process
 
@@ -46,10 +46,10 @@ Users should be able to:
 
 ### What I learned
 
-Got some hands on using css grid , tested different grid properties to find the best fit/
+Got some hands on using css grid , tested different grid properties to find the best fit
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [portfolio](https://yehan-nilanga.netlify.app/)
+- Frontend Mentor - [@Yehan20](https://www.frontendmentor.io/profile/Yehan20)
+
