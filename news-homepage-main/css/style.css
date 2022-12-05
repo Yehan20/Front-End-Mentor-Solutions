@@ -20,3 +20,42 @@ body{
 img{
     max-width: 100%;
 }
+ul{
+    list-style: none;
+}
+
+/* header css start */
+header{
+    padding: 55px 103px 30px 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    outline: 1px solid #111;
+}
+header .logo img {
+    width: 65px;
+    height: 42px;
+    /* height: 65px; */
+}
+nav{
+    /* background-color: yellow; */
+}
+
+nav  ul{
+    display: flex;
+    gap:2rem;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: var(--Dark-grayish-blue);
+}
+
+/* section -1 css  */
+.section-1{
+    padding: 35px 103px 30px 103px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
