@@ -18,7 +18,7 @@
 
 body {
     margin: 0;
-    min-width: 100vh;
+    min-height: 100vh;
     font-family: var(--ff-main);
 }
 
@@ -30,7 +30,7 @@ ul {
     list-style: none;
 }
 
-/* header css start */
+/*--------------------------- header css start -----------------------------*/
 header {
     padding: 55px 103px 30px 103px;
     display: flex;
@@ -41,11 +41,32 @@ header {
 header .logo img {
     width: 65px;
     height: 42px;
-    /* height: 65px; */
+}    
+
+.toggler {
+    
+    display:none;
+    background-image: url('../assets/images/icon-menu.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 250ms ease-in ;
+    padding:2em;
+    background-position: center top;
+    opacity: 1;
+}
+.toggler-container{
+    display: none;
 }
 
-nav {
-    /* background-color: yellow; */
+.toggler.close #level{
+    opacity: 0;
+}
+.close{
+    background-image: url('../assets/images/icon-menu-close.svg') !important;
+    background-position: top top;
+    background-size:30px;
+    opacity: 1;
+
 }
 
 nav ul {
@@ -57,9 +78,15 @@ nav a {
     text-decoration: none;
     font-size: 1.125rem;
     color: var(--Dark-grayish-blue);
-}
+    transition: all 250ms ease-in;
 
-/* section -1 css  */
+}
+nav a:hover{
+    color: var(--Softorange);
+}
+/*--------------------------- header css start -----------------------------*/
+
+/*---------------------------- section -1 css-------------------------------  */
 .section-1 {
     padding: 35px 103px 30px 103px;
     display: grid;
@@ -84,7 +111,14 @@ nav a {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
-
+.side-bar h3 a{
+    text-decoration: none;
+    transition: all 250ms ease-in;
+    color: inherit;
+}
+.side-bar h3 a:hover{
+    color: var(--Softorange);
+}
 .side-bar h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5em;
@@ -92,7 +126,6 @@ nav a {
 
 .side-bar div {
     margin-top: 1em;
-    /* background-color: pink; */
     padding-bottom: 1em;
 
 }
@@ -114,7 +147,6 @@ nav a {
 
 .sec-1-row {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit,minmax(100px,20rem)); */
     grid-template-columns: 1fr 1fr;
     padding-top: 1em;
 
@@ -143,8 +175,14 @@ nav a {
     font-size: 0.9rem;
     font-weight: 600;
     margin-top: 1em;
+    transition: all 250ms ease-in;
 }
+.btn:hover{
+    background-color: var(--Very-dark-blue);
+}
+/*---------------------------- section -1 css end-------------------------------  */
 
+/*---------------------------- section -2 css start-------------------------------  */
 .section-2 {
     display: grid;
     padding: 35px 103px 30px 103px;
@@ -172,13 +210,20 @@ nav a {
     color: var(--Dark-grayish-blue);
 }
 
-/* .section-2 .card img{
-    align-self: stretch;
-} */
+
 .section-2 .card h4 {
     font-size: 1.1rem;
-    margin-top: 0.2em;
+    margin-top: 0.2em; 
     margin-bottom: 0;
+}
+.section-2 .card h4 a{
+    text-decoration: none;
+    transition: all 250ms ease-in;
+    color: inherit;
+}
+
+.section-2 .card h4 a:hover{
+    color: var(--Softred);
 }
 
 .section-2 .card p {
@@ -186,14 +231,10 @@ nav a {
     margin-top: 0.5em;
     line-height: 1.5;
     color: var(--Dark-grayish-blue);
-    /* padding-right: 1.7em; */
     font-weight: 500;
     font-size: 0.9rem;
 }
-
-/* .section-2 .card:first-child,.section-2 .card:nth-child(2){
-    padding-right: 1.5em;
-} */
+/*---------------------------- section -2 end-------------------------------  */
 
 /*  media queries */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -256,5 +297,106 @@ nav a {
     }
     .section-2 .card:last-child{
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   header .logo img{
+    min-width: 65px;
+   }
+
+
+   nav{
+    background-color:var(--Off-white);
+    position:fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    transition: all 250ms ease-in;
+    transform:translate(100%);
+   }
+   .open-nav{
+    transform: translate(0);
+   }
+   
+   .toggler-container{
+       width: 100%;
+       display: block;
+   }
+   .toggler{
+    display:block;
+    z-index: 99;
+    margin-left: auto;
+    background-color:white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 1em;
+    top: 3em;
+   }
+   nav ul{
+    flex-direction:  column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10em;
+    padding-left: 1em;
+    gap: 1.5em;
+   }
+   
+   .section-2,
+   .section-1,
+   header {
+       padding: 35px 15px;
+
+   }
+   .section-1 {
+    grid-template-columns: 1fr;
+   }
+   .section-1 h1{
+    font-size: 2.9rem;
+   }
+   .section-1 img{
+    display: block;
+    width: 100%;
+   }
+   .side-bar {
+    grid-column: 1/2;
+    margin-left: 0;
+    margin-top: 3em;
+   }
+   .section-1 .sec-1 .sec-1-row,.section-2 {
+    grid-template-columns: 1fr;
+   }
+   .section-2{
+    padding-top: 0;
+   }
+   .section-2 .card{
+    margin-bottom: 1em;
+   }
+   .section-2 .card:last-child{
+    padding-left: 0;
+   }
+   
+}
+
+@media (max-width:340px){
+    .section-2 .card h4{
+        font-size: 1rem;
+    }
+    .section-2 .card h3{
+        font-size: 2rem;
+    }
+    .section-2 .card p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) { 
+    .section-2 .card  p{
+        line-height: 1.7;
+    }
+    .section-2 .card:first-child p, .section-2 .card:nth-child(2) p{
+       padding-right: 5em;
     }
 }
