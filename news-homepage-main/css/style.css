@@ -71,7 +71,7 @@ header .logo img {
 
 nav ul {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.6rem;
 }
 
 nav a {
@@ -106,7 +106,7 @@ nav a:hover{
 }
 
 .side-bar h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--Softorange);
     margin-bottom: 0.5em;
     margin-top: 0.5em;
@@ -134,7 +134,6 @@ nav a:hover{
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0;
-    padding-right: 1.5em;
     color: var(--Grayish-blue);
     font-weight: 300;
 }
@@ -185,7 +184,7 @@ nav a:hover{
 /*---------------------------- section -2 css start-------------------------------  */
 .section-2 {
     display: grid;
-    padding: 35px 163px 30px 163px;
+    padding:0px 163px 74px 163px;
     grid-template-columns: 1fr 1fr 1fr
 }
 
@@ -215,6 +214,7 @@ nav a:hover{
     font-size: 1.1rem;
     margin-top: 0.2em; 
     margin-bottom: 0;
+    white-space: nowrap;
 }
 .section-2 .card h4 a{
     text-decoration: none;
@@ -397,6 +397,6 @@ nav a:hover{
         line-height: 1.7;
     }
     .section-2 .card:first-child p, .section-2 .card:nth-child(2) p{
-       padding-right: 5em;
+       padding-right: 3em;
     }
 }
