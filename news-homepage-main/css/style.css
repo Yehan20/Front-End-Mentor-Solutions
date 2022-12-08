@@ -35,7 +35,7 @@ ul {
 
 /*--------------------------- header css start -----------------------------*/
 header {
-    padding: 85px 163px 30px 163px;
+    padding: 80px 163px 30px 163px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +105,8 @@ nav a:hover{
     background-color: var(--Very-dark-blue);
     margin-left: 1.9em;
     color: #fff;
-    padding: 0.75em 1.2em;
+    padding: 1em 1.2em 0.75em 1.2em;
+    /* align-self: flex-start; */
 }
 
 .side-bar h2 {
@@ -123,28 +124,29 @@ nav a:hover{
     color: var(--Softorange);
 }
 .side-bar h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5em;
 }
 
 .side-bar div {
-    margin-top: 1em;
+    margin-top: 1.8em;
     padding-bottom: 1em;
-
+  
 }
 
 .side-bar p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.6;
     margin-bottom: 0;
     color: var(--Grayish-blue);
     font-weight: 300;
+    padding-right: 4em;
 }
 
 .side-bar div:nth-of-type(1),
 .side-bar div:nth-of-type(2) {
     border-bottom: 1px solid var(--Dark-grayish-blue);
-    padding-bottom: 1.4em;
+    padding-bottom: 2em;
 }
 
 .sec-1-row {
@@ -153,18 +155,22 @@ nav a:hover{
     padding-top: 1em;
 
 }
+.sec-1-row .col{
+    padding-left: 2em;
+}
 
 .sec-1-row h1 {
     margin: 0;
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     line-height: 0.9;
 }
 
 .sec-1-row p {
     line-height: 1.7;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--Dark-grayish-blue);
     margin-top: 0;
+    padding-right: 3.9em;
 }
 
 .btn {
@@ -208,7 +214,7 @@ nav a:hover{
 }
 
 .section-2 .card h3 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     margin: 0;
     color: var(--Dark-grayish-blue);
 }
