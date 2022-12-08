@@ -157,7 +157,7 @@ nav a:hover{
 
 }
 .sec-1-row .col{
-    padding-left: 1.4em;
+    padding-left: 0.7em;
 }
 
 .sec-1-row h1 {
@@ -412,8 +412,8 @@ nav a:hover{
        padding-right: 1em;
     }
     header,.section-2, .section-1{
-        padding-left: 235px;
-        padding-right: 235px;
+        padding-left: 220px;
+        padding-right: 220px;
     }
 
     .section-2 .card:last-child{
