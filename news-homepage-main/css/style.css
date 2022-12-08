@@ -91,7 +91,7 @@ nav a:hover{
 
 /*---------------------------- section -1 css-------------------------------  */
 .section-1 {
-    padding: 35px 163px 30px 163px;
+    padding: 25px 163px 30px 163px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -105,7 +105,7 @@ nav a:hover{
     background-color: var(--Very-dark-blue);
     margin-left: 1.9em;
     color: #fff;
-    padding: 0.75em 1.7em;
+    padding: 0.75em 1.2em;
 }
 
 .side-bar h2 {
@@ -162,7 +162,7 @@ nav a:hover{
 
 .sec-1-row p {
     line-height: 1.4;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--Dark-grayish-blue);
 }
 
@@ -174,7 +174,7 @@ nav a:hover{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 4px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-top: 1em;
     transition: all 250ms ease-in;
