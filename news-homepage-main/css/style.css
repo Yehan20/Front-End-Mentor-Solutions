@@ -74,12 +74,12 @@ header .logo img {
 
 nav ul {
     display: flex;
-    gap: 1.6rem;
+    gap: 2rem;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: var(--Dark-grayish-blue);
     transition: all 250ms ease-in;
 
@@ -91,7 +91,7 @@ nav a:hover{
 
 /*---------------------------- section -1 css-------------------------------  */
 .section-1 {
-    padding: 10px 163px 30px 163px;
+    padding: 0px 163px 30px 163px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -109,10 +109,10 @@ nav a:hover{
 }
 
 .side-bar h2 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     color: var(--Softorange);
     margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-top: 0.1em;
 }
 .side-bar h3 a{
     text-decoration: none;
@@ -144,7 +144,7 @@ nav a:hover{
 .side-bar div:nth-of-type(1),
 .side-bar div:nth-of-type(2) {
     border-bottom: 1px solid var(--Dark-grayish-blue);
-    padding-bottom: 2em;
+    padding-bottom: 1.4em;
 }
 
 .sec-1-row {
@@ -156,14 +156,15 @@ nav a:hover{
 
 .sec-1-row h1 {
     margin: 0;
-    font-size: 3.9rem;
-    line-height: 1;
+    font-size: 3.5rem;
+    line-height: 0.9;
 }
 
 .sec-1-row p {
     line-height: 1.7;
     font-size: 1rem;
     color: var(--Dark-grayish-blue);
+    margin-top: 0;
 }
 
 .btn {
