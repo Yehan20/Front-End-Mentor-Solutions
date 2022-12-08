@@ -21,6 +21,9 @@ body {
     min-height: 100vh;
     font-family: var(--ff-main);
 }
+main{
+    background-color: var(--Off-white);
+}
 
 img {
     max-width: 100%;
