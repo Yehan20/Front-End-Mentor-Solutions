@@ -35,7 +35,7 @@ ul {
 
 /*--------------------------- header css start -----------------------------*/
 header {
-    padding: 75px 163px 30px 163px;
+    padding: 110px 100px 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +92,7 @@ nav a:hover{
 
 /*---------------------------- section -1 css-------------------------------  */
 .section-1 {
-    padding: 5px 163px 30px 163px;
+    padding: 5px 100px 30px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -163,15 +163,16 @@ nav a:hover{
 .sec-1-row h1 {
     margin: 0;
     font-size: 3.4rem;
-    line-height: 0.9;
+    line-height:1;
+    padding-right: 1em;
 }
 
 .sec-1-row p {
     line-height: 1.7;
-    font-size: 0.8rem;
+    font-size:1rem;
     color: var(--Dark-grayish-blue);
     margin-top: 0;
-    padding-right: 1em;
+    padding-right:0;
 }
 
 .btn {
@@ -196,7 +197,7 @@ nav a:hover{
 .section-2 {
     padding-top: 1em;
     display: grid;
-    padding:30px 163px 74px 163px;
+    padding:30px 100px 74px 100px;
     grid-template-columns: 1fr 1fr 1fr
 }
 
@@ -412,8 +413,8 @@ nav a:hover{
        padding-right: 1em;
     }
     header,.section-2, .section-1{
-        padding-left: 220px;
-        padding-right: 220px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .section-2 .card:last-child{
