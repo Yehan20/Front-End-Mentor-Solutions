@@ -412,9 +412,12 @@ nav a:hover{
     .section-2 .card:first-child p, .section-2 .card:nth-child(2) p{
        padding-right: 1em;
     }
+    .section-1 {
+        padding-top: 20px;
+    }
     header,.section-2, .section-1{
-        padding-left: 180px;
-        padding-right: 180px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 
     .section-2 .card:last-child{
