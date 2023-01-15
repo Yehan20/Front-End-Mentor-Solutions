@@ -35,7 +35,7 @@ ul {
 
 /*--------------------------- header css start -----------------------------*/
 header {
-    padding: 110px 100px 30px 100px;
+    padding: 100px 100px 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +80,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--Dark-grayish-blue);
     transition: all 250ms ease-in;
 
@@ -413,8 +413,8 @@ nav a:hover{
        padding-right: 1em;
     }
     header,.section-2, .section-1{
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
     .section-2 .card:last-child{
